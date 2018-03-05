@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zw/code/C_and_C++_Projects/ClusLib/examples/test_main.cpp
+iostream
+-
+../library.h
+/Users/zw/code/C_and_C++_Projects/ClusLib/library.h
+
+/Users/zw/code/C_and_C++_Projects/ClusLib/library.h
+

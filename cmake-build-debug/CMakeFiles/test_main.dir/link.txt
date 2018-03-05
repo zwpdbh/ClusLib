@@ -1,0 +1,1 @@
+/usr/local/opt/llvm/bin/clang++  -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/test_main.dir/examples/test_main.cpp.o  -o ../bin/test_main  -L/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug -Wl,-rpath,/Users/zw/code/C_and_C++_Projects/ClusLib/bin -Wl,-rpath,/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug ../bin/libClusLib.dylib 
