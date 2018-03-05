@@ -115,16 +115,16 @@ cl/types.h
 ../cl/utilities/cl/types.h
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/examples/dataset_example_main.cpp
+cl/datasets/cattrinfo.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/examples/cl/datasets/cattrinfo.hpp
+cl/datasets/dataset.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/examples/cl/datasets/dataset.hpp
+iomanip
+-
 iostream
 -
 sstream
 -
-iomanip
--
-cl/datasets/dataset.hpp
-/Users/zw/code/C_and_C++_Projects/ClusLib/examples/cl/datasets/dataset.hpp
-cl/datasets/cattrinfo.hpp
-/Users/zw/code/C_and_C++_Projects/ClusLib/examples/cl/datasets/cattrinfo.hpp
 
 /usr/local/include/boost/aligned_storage.hpp
 boost/type_traits/aligned_storage.hpp

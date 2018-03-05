@@ -9,53 +9,113 @@
 #ifndef nnmap_h
 #define nnmap_h
 
-#include "cl/types.h"
 #include "cl/errors.hpp"
-#include <map>
+#include "cl/types.h"
 #include <algorithm>
+#include <map>
 
 namespace ClusLib {
-    typedef std::pair<Size, Size> nnPair;
+typedef std::pair<Size, Size> nnPair;
 
-    class compare_a {
-    public:
-        bool operator() (const nnPair& a, const nnPair &b) const {
-            Size amin = std::min(a.first, a.second);
-            Size amax = std::max(a.first, a.second);
-            Size bmin = std::min(b.first, b.second);
-            Size bmax = std::max(b.first, b.second);
+class compare_a {
+public:
+  bool operator()(const nnPair &a, const nnPair &b) const {
+    Size amin = std::min(a.first, a.second);
+    Size amax = std::max(a.first, a.second);
+    Size bmin = std::min(b.first, b.second);
+    Size bmax = std::max(b.first, b.second);
 
-            if (amin < bmin) {
-                return true;
-            } else if (amin == bmin) {
-                if (amax < bmax) {
-                    return true;
-                } else {
-                    return false;
-                }
-            } else {
-                return false;
-            }
-        }
-    }; // end of class compare_a
+    if (amin < bmin) {
+      return true;
+    } else if (amin == bmin) {
+      if (amax < bmax) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+}; // end of class compare_a
 
-    class comare_b {
-    public: 
-        bool operator() (const nnPair& a, const nnPair& b) const {
-            if (a.first < b.first) {
-                return true;
-            } else if (a.first == b.first) {
-                if (a.second < b.second) {
-                    return true;
-                } else {
-                    return false;
-                }
-            } else {
-                return false;
-            }
-        }
-    }; // end of class compare_b
+class compare_b {
+public:
+  bool operator()(const nnPair &a, const nnPair &b) const {
+    if (a.first < b.first) {
+      return true;
+    } else if (a.first == b.first) {
+      if (a.second < b.second) {
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  }
+}; // end of class compare_b
+
+template <class T, class C> class nnMap {
+public:
+  typedef typename std::map<nnPair, T, C>::value_type value_type;
+  typedef typename std::map<nnPair, T, C>::iterator iterator;
+  typedef typename std::map<nnPair, T, C>::const_iterator const_iterator;
+
+  std::pair<iterator, bool> add_item(Size i, Size j, T item);
+  bool contain_key(Size i, Size j) const;
+  T &operator()(Size i, Size j);
+  const T &operator()(Size i, Size j) const;
+  void clear();
+
+  iterator begin();
+  iterator end();
+  const_iterator begin() const;
+  const_iterator end() const;
+
+private:
+  std::map<nnPair, T, C> _map;
+};
+
+typedef nnMap<Real, compare_a> irrMapA;
+typedef nnMap<Size, compare_b> iiiMapB;
+
+class compare_iir {
+public:
+  bool operator()(const irrMapA::value_type &a, const irrMapA::value_type &b) {
+    if (a.second < b.second) {
+      return true;
+    }
+    return false;
+  }
+};
+
+template <typename T, typename C>
+inline std::pair<typename nnMap<T, C>::iterator, bool>
+nnMap<T, C>::add_item(Size i, Size j, T item) {
+  std::pair<iterator, bool> ret =
+      _map.insert(std::pair<nnPair, T>(nnPair(i, j), item));
+
+  return ret;
 }
 
+template <typename T, typename C>
+inline bool nnMap<T, C>::contain_key(Size i, Size j) const {
+  const_iterator it;
+  it = _map.find(nnPair(i, j));
+  if (it != _map.end()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+template <typename T, typename C>
+inline T &nnMap<T, C>::operator()(Size i, Size j) {
+  iterator it;
+  it = _map.find()
+}
+
+} // namespace ClusLib
 
 #endif /* nnmap_h */
