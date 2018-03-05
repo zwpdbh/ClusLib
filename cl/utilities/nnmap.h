@@ -113,7 +113,47 @@ inline bool nnMap<T, C>::contain_key(Size i, Size j) const {
 template <typename T, typename C>
 inline T &nnMap<T, C>::operator()(Size i, Size j) {
   iterator it;
-  it = _map.find()
+  it = _map.find(nnPair(i, j));
+  if (it != _map.end()) {
+    return it->second;
+  } else {
+    FAIL("Can not find key (" << i << ", " << j << ") in nnMap");
+  }
+}
+
+template <typename T, typename C>
+inline const T &nnMap<T, C>::operator()(Size i, Size j) const {
+  const_iterator it;
+  it = _map.find(nnPair(i, j));
+  if (it != _map.end()) {
+    return it->second;
+  } else {
+    FAIL("Can not find key (" << i << ", " << j << ")" in nnMap);
+  }
+}
+
+template <typename T, typename C>
+inline typename nnMap<T, C>::iterator nnMap<T, C>::begin() {
+  return _map.begin();
+}
+
+template <typename T, typename C>
+inline typename nnMap<T, C>::iterator nnMap<T, C>::end() {
+  return _map.end();
+}
+
+template <typename T, typename C>
+inline typename nnMap<T, C>::const_iterator nnMap<T, C>::begin() const {
+  return _map.begin();
+}
+
+template <typename T, typename C>
+inline typename nnMap<T, C>::const_iterator nnMap<T, C>::end() const {
+  return _map.end();
+}
+
+template <typename T, typename C> inline void nnMap<T, C>::clear() {
+  _map.clear();
 }
 
 } // namespace ClusLib
