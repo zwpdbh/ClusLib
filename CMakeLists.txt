@@ -77,4 +77,8 @@ add_library(
         cl/patterns/nodevisitor.hpp
         cl/patterns/leafnode.hpp
         cl/patterns/leafnode.cpp
+        cl/patterns/internalnode.hpp
+        cl/patterns/internalnode.cpp
+        cl/utilities/dendrogram.hpp
+        cl/utilities/dendrogram.cpp
 )

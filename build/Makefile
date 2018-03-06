@@ -433,6 +433,33 @@ cl/errors.cpp.s:
 	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/errors.cpp.s
 .PHONY : cl/errors.cpp.s
 
+cl/patterns/internalnode.o: cl/patterns/internalnode.cpp.o
+
+.PHONY : cl/patterns/internalnode.o
+
+# target to build an object file
+cl/patterns/internalnode.cpp.o:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o
+.PHONY : cl/patterns/internalnode.cpp.o
+
+cl/patterns/internalnode.i: cl/patterns/internalnode.cpp.i
+
+.PHONY : cl/patterns/internalnode.i
+
+# target to preprocess a source file
+cl/patterns/internalnode.cpp.i:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.i
+.PHONY : cl/patterns/internalnode.cpp.i
+
+cl/patterns/internalnode.s: cl/patterns/internalnode.cpp.s
+
+.PHONY : cl/patterns/internalnode.s
+
+# target to generate assembly for a file
+cl/patterns/internalnode.cpp.s:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.s
+.PHONY : cl/patterns/internalnode.cpp.s
+
 cl/patterns/leafnode.o: cl/patterns/leafnode.cpp.o
 
 .PHONY : cl/patterns/leafnode.o
@@ -459,6 +486,33 @@ cl/patterns/leafnode.s: cl/patterns/leafnode.cpp.s
 cl/patterns/leafnode.cpp.s:
 	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.s
 .PHONY : cl/patterns/leafnode.cpp.s
+
+cl/utilities/dendrogram.o: cl/utilities/dendrogram.cpp.o
+
+.PHONY : cl/utilities/dendrogram.o
+
+# target to build an object file
+cl/utilities/dendrogram.cpp.o:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o
+.PHONY : cl/utilities/dendrogram.cpp.o
+
+cl/utilities/dendrogram.i: cl/utilities/dendrogram.cpp.i
+
+.PHONY : cl/utilities/dendrogram.i
+
+# target to preprocess a source file
+cl/utilities/dendrogram.cpp.i:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.i
+.PHONY : cl/utilities/dendrogram.cpp.i
+
+cl/utilities/dendrogram.s: cl/utilities/dendrogram.cpp.s
+
+.PHONY : cl/utilities/dendrogram.s
+
+# target to generate assembly for a file
+cl/utilities/dendrogram.cpp.s:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.s
+.PHONY : cl/utilities/dendrogram.cpp.s
 
 examples/dataset_example_main.o: examples/dataset_example_main.cpp.o
 
@@ -530,9 +584,15 @@ help:
 	@echo "... cl/errors.o"
 	@echo "... cl/errors.i"
 	@echo "... cl/errors.s"
+	@echo "... cl/patterns/internalnode.o"
+	@echo "... cl/patterns/internalnode.i"
+	@echo "... cl/patterns/internalnode.s"
 	@echo "... cl/patterns/leafnode.o"
 	@echo "... cl/patterns/leafnode.i"
 	@echo "... cl/patterns/leafnode.s"
+	@echo "... cl/utilities/dendrogram.o"
+	@echo "... cl/utilities/dendrogram.i"
+	@echo "... cl/utilities/dendrogram.s"
 	@echo "... examples/dataset_example_main.o"
 	@echo "... examples/dataset_example_main.i"
 	@echo "... examples/dataset_example_main.s"

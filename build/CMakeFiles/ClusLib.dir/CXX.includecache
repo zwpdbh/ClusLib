@@ -45,10 +45,10 @@ vector
 -
 
 ..//cl/datasets/attrinfo.hpp
-string
--
 cl/datasets/attrvalue.h
 ../cl/datasets/cl/datasets/attrvalue.h
+string
+-
 
 ..//cl/datasets/attrvalue.h
 boost/variant.hpp
@@ -122,6 +122,12 @@ exception
 sstream
 -
 
+..//cl/patterns/internalnode.hpp
+cl/patterns/node.hpp
+../cl/patterns/cl/patterns/node.hpp
+cl/utilities/container.h
+../cl/patterns/cl/utilities/container.h
+
 ..//cl/patterns/leafnode.hpp
 cl/datasets/record.hpp
 ../cl/patterns/cl/datasets/record.hpp
@@ -160,6 +166,14 @@ cl/errors.hpp
 vector
 -
 
+..//cl/utilities/dendrogram.hpp
+cl/types.h
+../cl/utilities/cl/types.h
+sstream
+-
+string
+-
+
 ..//cl/utilities/nnmap.h
 cl/errors.hpp
 ../cl/utilities/cl/errors.hpp
@@ -189,8 +203,16 @@ hclustering.hpp
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp
-stdio.h
--
+cl/clusters/pclustering.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/clusters/pclustering.hpp
+cl/patterns/internalnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/patterns/internalnode.hpp
+cl/patterns/leafnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/patterns/leafnode.hpp
+cl/patterns/node.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/patterns/node.hpp
+cl/utilities/dendrogram.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/utilities/dendrogram.hpp
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.cpp
 cl/clusters/pclustering.hpp
@@ -260,9 +282,15 @@ cl/errors.hpp
 stdexcept
 -
 
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.cpp
+cl/patterns/internalnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/internalnode.hpp
+
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.cpp
 cl/patterns/leafnode.hpp
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/leafnode.hpp
+
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.cpp
 
 /usr/local/include/boost/aligned_storage.hpp
 boost/type_traits/aligned_storage.hpp

@@ -13,17 +13,17 @@
 #include "cl/datasets/record.hpp"
 
 namespace ClusLib {
-    class CenterCluster: public Cluster {
-    public:
-        CenterCluster() {}
-        CenterCluster(const boost::shared_ptr<Record>& center);
-        
-        const boost::shared_ptr<Record>& center() const;
-        boost::shared_ptr<Record>& center();
-        
-    protected:
-        boost::shared_ptr<Record> _center;
-    };
-}
+class CenterCluster : public Cluster {
+  public:
+    CenterCluster() {}
+    CenterCluster(const boost::shared_ptr<Record>& center);
+
+    const boost::shared_ptr<Record>& center() const;
+    boost::shared_ptr<Record>&       center();
+
+  protected:
+    boost::shared_ptr<Record> _center;
+};
+} // namespace ClusLib
 
 #endif /* centercluster_hpp */

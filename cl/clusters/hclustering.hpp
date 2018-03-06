@@ -9,6 +9,10 @@
 #ifndef hclustering_hpp
 #define hclustering_hpp
 
-#include <stdio.h>
+#include "cl/clusters/pclustering.hpp"
+#include "cl/patterns/internalnode.hpp"
+#include "cl/patterns/leafnode.hpp"
+#include "cl/patterns/node.hpp"
+#include "cl/utilities/dendrogram.hpp"
 
 #endif /* hclustering_hpp */

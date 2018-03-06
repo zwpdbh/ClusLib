@@ -10,9 +10,9 @@ public:
   LeafNode(const boost::shared_ptr<Record> &r, Size id = 0,
            const boost::shared_ptr<Node> &p = boost::shared_ptr<Node>());
 
-  void accept(NodeVisitor &v);
-  Size num_children() const;
-  Size num_records() const;
+  void accept(NodeVisitor &v) override;
+  Size num_children() const override;
+  Size num_records() const override;
   boost::shared_ptr<Record> get_data();
 
 private:

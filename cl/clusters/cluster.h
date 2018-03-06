@@ -15,14 +15,14 @@
 
 namespace ClusLib {
 class Cluster : public Container<boost::shared_ptr<Record>> {
-public:
-  virtual ~Cluster() {}
+  public:
+    virtual ~Cluster() {}
 
-  void set_id(Size id);
-  Size get_id() const;
+    void set_id(Size id);
+    Size get_id() const;
 
-protected:
-  Size _id;
+  protected:
+    Size _id;
 };
 
 inline void Cluster::set_id(Size id) { _id = id; }
