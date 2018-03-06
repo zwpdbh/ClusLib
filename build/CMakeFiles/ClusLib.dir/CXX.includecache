@@ -30,6 +30,14 @@ cl/datasets/record.hpp
 cl/utilities/container.h
 ../cl/clusters/cl/utilities/container.h
 
+..//cl/clusters/pclustering.hpp
+cl/clusters/cluster.h
+../cl/clusters/cl/clusters/cluster.h
+cl/utilities/container.h
+../cl/clusters/cl/utilities/container.h
+cl/utilities/nnmap.h
+../cl/clusters/cl/utilities/nnmap.h
+
 ..//cl/clusters/subspacecluster.hpp
 cl/clusters/centercluster.hpp
 ../cl/clusters/cl/clusters/centercluster.hpp
@@ -130,6 +138,16 @@ cl/errors.hpp
 vector
 -
 
+..//cl/utilities/nnmap.h
+cl/errors.hpp
+../cl/utilities/cl/errors.hpp
+cl/types.h
+../cl/utilities/cl/types.h
+algorithm
+-
+map
+-
+
 ..//cl/utilities/null.h
 cl/types.h
 ../cl/utilities/cl/types.h
@@ -153,14 +171,16 @@ stdio.h
 -
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.cpp
-pclustering.hpp
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp
-
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp
-cl/clusters/cluster.h
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/clusters/cluster.h
-cl/utilities/container.h
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/utilities/container.h
+cl/clusters/pclustering.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/clusters/pclustering.hpp
+cl/errors.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/errors.hpp
+algorithm
+-
+fstream
+-
+iomanip
+-
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/subspacecluster.cpp
 cl/clusters/subspacecluster.hpp

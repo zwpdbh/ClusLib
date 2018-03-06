@@ -73,4 +73,7 @@ add_library(
         cl/clusters/pclustering.hpp
         cl/clusters/subspacecluster.hpp
         cl/clusters/subspacecluster.cpp
+        cl/patterns/node.hpp
+        cl/patterns/nodevisitor.hpp
+        
 )

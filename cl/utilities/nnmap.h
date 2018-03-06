@@ -128,7 +128,7 @@ inline const T &nnMap<T, C>::operator()(Size i, Size j) const {
   if (it != _map.end()) {
     return it->second;
   } else {
-    FAIL("Can not find key (" << i << ", " << j << ")" in nnMap);
+    FAIL("Can not find key(" << i << "," << j << ") in nnMap");
   }
 }
 

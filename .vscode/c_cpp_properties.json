@@ -9,7 +9,7 @@
                 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
                 "/usr/include",
                 "${workspaceRoot}",
-                "/Users/zw/code/C_and_C++_Projects/ClusLib/"
+                "/Users/zw/code/C_and_C++_Projects/ClusLib"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
@@ -21,7 +21,7 @@
                     "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
                     "/usr/include",
                     "${workspaceRoot}",
-                    "/Users/zw/code/C_and_C++_Projects/ClusLib/"
+                    "/Users/zw/code/C_and_C++_Projects/ClusLib"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""
@@ -34,7 +34,6 @@
         {
             "name": "Linux",
             "includePath": [
-                "/Users/zw/code/C_and_C++_Projects/ClusLib/",
                 "/usr/include",
                 "/usr/local/include",
                 "${workspaceRoot}"
@@ -44,7 +43,6 @@
             "browse": {
                 "path": [
                     "/usr/include",
-                    "/Users/zw/code/C_and_C++_Projects/ClusLib/",
                     "/usr/local/include",
                     "${workspaceRoot}"
                 ],
