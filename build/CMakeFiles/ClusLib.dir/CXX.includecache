@@ -291,6 +291,14 @@ cl/patterns/leafnode.hpp
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/leafnode.hpp
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.cpp
+cl/utilities/dendrogram.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/cl/utilities/dendrogram.hpp
+ctime
+-
+fstream
+-
+iomanip
+-
 
 /usr/local/include/boost/aligned_storage.hpp
 boost/type_traits/aligned_storage.hpp
