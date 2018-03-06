@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.o"
   "CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.o"
   "CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o"
+  "CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o"
   "../bin/libClusLib.pdb"
   "../bin/libClusLib.dylib"
 )

@@ -3,10 +3,9 @@
         {
             "name": "Mac",
             "includePath": [
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+                "/usr/local/opt/llvm/include/c++/v1",
+                "/usr/local/opt/llvm/include/clang/",
                 "/usr/local/include",
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include",
-                "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
                 "/usr/include",
                 "${workspaceRoot}",
                 "/Users/zw/code/C_and_C++_Projects/ClusLib"
@@ -15,10 +14,9 @@
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [
-                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+                    "/usr/local/opt/llvm/include/clang/",
+                    "/usr/local/opt/llvm/include/c++/v1",
                     "/usr/local/include",
-                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include",
-                    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
                     "/usr/include",
                     "${workspaceRoot}",
                     "/Users/zw/code/C_and_C++_Projects/ClusLib"
@@ -36,7 +34,8 @@
             "includePath": [
                 "/usr/include",
                 "/usr/local/include",
-                "${workspaceRoot}"
+                "${workspaceRoot}",
+                "/Users/zw/code/C_and_C++_Projects/ClusLib"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",
@@ -54,7 +53,8 @@
             "name": "Win32",
             "includePath": [
                 "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/include",
-                "${workspaceRoot}"
+                "${workspaceRoot}",
+                "/Users/zw/code/C_and_C++_Projects/ClusLib"
             ],
             "defines": [
                 "_DEBUG",

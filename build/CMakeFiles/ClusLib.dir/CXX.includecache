@@ -23,12 +23,12 @@ cl/datasets/record.hpp
 ../cl/clusters/cl/datasets/record.hpp
 
 ..//cl/clusters/cluster.h
-vector
--
 cl/datasets/record.hpp
 ../cl/clusters/cl/datasets/record.hpp
 cl/utilities/container.h
 ../cl/clusters/cl/utilities/container.h
+vector
+-
 
 ..//cl/clusters/pclustering.hpp
 cl/clusters/cluster.h
@@ -81,18 +81,18 @@ vector
 -
 
 ..//cl/datasets/record.hpp
-boost/shared_ptr.hpp
--
-cl/types.h
-../cl/datasets/cl/types.h
-cl/errors.hpp
-../cl/datasets/cl/errors.hpp
-cl/datasets/schema.hpp
-../cl/datasets/cl/datasets/schema.hpp
 cl/datasets/attrinfo.hpp
 ../cl/datasets/cl/datasets/attrinfo.hpp
+cl/datasets/schema.hpp
+../cl/datasets/cl/datasets/schema.hpp
+cl/errors.hpp
+../cl/datasets/cl/errors.hpp
+cl/types.h
+../cl/datasets/cl/types.h
 cl/utilities/container.h
 ../cl/datasets/cl/utilities/container.h
+boost/shared_ptr.hpp
+-
 vector
 -
 
@@ -120,6 +120,28 @@ boost/shared_ptr.hpp
 exception
 -
 sstream
+-
+
+..//cl/patterns/leafnode.hpp
+cl/datasets/record.hpp
+../cl/patterns/cl/datasets/record.hpp
+cl/patterns/node.hpp
+../cl/patterns/cl/patterns/node.hpp
+
+..//cl/patterns/node.hpp
+cl/errors.hpp
+../cl/patterns/cl/errors.hpp
+cl/patterns/nodevisitor.hpp
+../cl/patterns/cl/patterns/nodevisitor.hpp
+cl/types.h
+../cl/patterns/cl/types.h
+boost/shared_ptr.hpp
+-
+
+..//cl/patterns/nodevisitor.hpp
+boost/shared_ptr.hpp
+-
+cl/types.h
 -
 
 ..//cl/types.h
@@ -237,6 +259,10 @@ cl/errors.hpp
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/cl/errors.hpp
 stdexcept
 -
+
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.cpp
+cl/patterns/leafnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/leafnode.hpp
 
 /usr/local/include/boost/aligned_storage.hpp
 boost/type_traits/aligned_storage.hpp

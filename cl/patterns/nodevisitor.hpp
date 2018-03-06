@@ -5,14 +5,14 @@
 #include <cl/types.h>
 
 namespace ClusLib {
-    class LeafNode;
-    class InternalNode;
-    
-    class NodeVisitor {
-        public:
-        virtual void visit(LeafNode& node) = 0;
-        virtual void visit(InternalNode& node) = 0;
-    };
-}
+class LeafNode;
+class InternalNode;
+
+class NodeVisitor {
+public:
+  virtual void visit(LeafNode &node) = 0;
+  virtual void visit(InternalNode &node) = 0;
+};
+} // namespace ClusLib
 
 #endif // CLUSTER_NODEVISITOR_HPP

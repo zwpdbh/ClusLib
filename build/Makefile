@@ -433,6 +433,33 @@ cl/errors.cpp.s:
 	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/errors.cpp.s
 .PHONY : cl/errors.cpp.s
 
+cl/patterns/leafnode.o: cl/patterns/leafnode.cpp.o
+
+.PHONY : cl/patterns/leafnode.o
+
+# target to build an object file
+cl/patterns/leafnode.cpp.o:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o
+.PHONY : cl/patterns/leafnode.cpp.o
+
+cl/patterns/leafnode.i: cl/patterns/leafnode.cpp.i
+
+.PHONY : cl/patterns/leafnode.i
+
+# target to preprocess a source file
+cl/patterns/leafnode.cpp.i:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.i
+.PHONY : cl/patterns/leafnode.cpp.i
+
+cl/patterns/leafnode.s: cl/patterns/leafnode.cpp.s
+
+.PHONY : cl/patterns/leafnode.s
+
+# target to generate assembly for a file
+cl/patterns/leafnode.cpp.s:
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.s
+.PHONY : cl/patterns/leafnode.cpp.s
+
 examples/dataset_example_main.o: examples/dataset_example_main.cpp.o
 
 .PHONY : examples/dataset_example_main.o
@@ -503,6 +530,9 @@ help:
 	@echo "... cl/errors.o"
 	@echo "... cl/errors.i"
 	@echo "... cl/errors.s"
+	@echo "... cl/patterns/leafnode.o"
+	@echo "... cl/patterns/leafnode.i"
+	@echo "... cl/patterns/leafnode.s"
 	@echo "... examples/dataset_example_main.o"
 	@echo "... examples/dataset_example_main.i"
 	@echo "... examples/dataset_example_main.s"
