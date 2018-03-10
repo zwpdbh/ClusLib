@@ -197,8 +197,8 @@ Project_BINARY_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters
 
-//Dependencies for target
-cluslib_cluster_LIB_DEPENDS:STATIC=
+//Dependencies for the target
+cluslib_clusters_LIB_DEPENDS:STATIC=general;cluslib_global;
 
 
 ########################

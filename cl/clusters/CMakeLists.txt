@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.5)
-
 set(PROJECT_NAME "ClusLib")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -15,18 +14,12 @@ set(LIBRARY_OUTPUT_PATH  ${CMAKE_BINARY_DIR})
 # do not show warnings about override
 add_definitions("-Wno-c++11-extensions")
 
-include_directories("/usr/local/include/" )
+include_directories("/usr/local/include/")
 include_directories("/usr/include")
-include_directories("/Users/zw/code/C_and_C++_Projects/ClusLib")
 include_directories("/usr/local/include/ClusLib")
+include_directories("/Users/zw/code/C_and_C++_Projects/ClusLib")
 
-file(GLOB cl_global_headers
-        ../errors.hpp
-)
-
-file(GLOB cl_global_sources
-        ../errors.cpp
-        )
+link_directories("/usr/local/lib/ClusLib/")
 
 file(GLOB cl_clusters_headers
     centercluster.hpp
@@ -42,11 +35,11 @@ file(GLOB cl_clusters_sources
         subspacecluster.cpp
 )
 
-add_library(cluslib_cluster SHARED ${cl_global_headers} ${cl_global_sources} ${cl_clusters_headers} ${cl_clusters_sources})
-
+add_library(cluslib_clusters SHARED ${cl_clusters_headers} ${cl_clusters_sources})
+target_link_libraries(cluslib_clusters cluslib_global)
 
 # Install library
-install(TARGETS cluslib_cluster DESTINATION lib/${PROJECT_NAME})
+install(TARGETS cluslib_clusters DESTINATION lib/${PROJECT_NAME})
 
 # Install library headers
 install(FILES ${cl_clusters_headers} DESTINATION include/${PROJECT_NAME}/cl/clusters)

@@ -17,7 +17,6 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/local/include"
   "/usr/local/include/ClusLib"
-  "/Users/zw/code/C_and_C++_Projects/ClusLib"
   )
 
 # Targets to which this target links.

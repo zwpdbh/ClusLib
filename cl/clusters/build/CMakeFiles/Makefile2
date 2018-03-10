@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters
 CMAKE_BINARY_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/cluslib_cluster.dir
+# Target rules for target CMakeFiles/cluslib_clusters.dir
 
 # All Build rule for target.
-CMakeFiles/cluslib_cluster.dir/all:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/depend
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target cluslib_cluster"
-.PHONY : CMakeFiles/cluslib_cluster.dir/all
+CMakeFiles/cluslib_clusters.dir/all:
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/depend
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target cluslib_clusters"
+.PHONY : CMakeFiles/cluslib_clusters.dir/all
 
 # Include target in all.
-all: CMakeFiles/cluslib_cluster.dir/all
+all: CMakeFiles/cluslib_clusters.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cluslib_cluster.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cluslib_cluster.dir/all
+CMakeFiles/cluslib_clusters.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cluslib_clusters.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build/CMakeFiles 0
-.PHONY : CMakeFiles/cluslib_cluster.dir/rule
+.PHONY : CMakeFiles/cluslib_clusters.dir/rule
 
 # Convenience name for target.
-cluslib_cluster: CMakeFiles/cluslib_cluster.dir/rule
+cluslib_clusters: CMakeFiles/cluslib_clusters.dir/rule
 
-.PHONY : cluslib_cluster
-
-# clean rule for target.
-CMakeFiles/cluslib_cluster.dir/clean:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/clean
-.PHONY : CMakeFiles/cluslib_cluster.dir/clean
+.PHONY : cluslib_clusters
 
 # clean rule for target.
-clean: CMakeFiles/cluslib_cluster.dir/clean
+CMakeFiles/cluslib_clusters.dir/clean:
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/clean
+.PHONY : CMakeFiles/cluslib_clusters.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cluslib_clusters.dir/clean
 
 .PHONY : clean
 

@@ -56,27 +56,17 @@ CMAKE_BINARY_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/local/Cellar/cmake/3.10.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/local/Cellar/cmake/3.10.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -112,17 +102,27 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/local/Cellar/cmake/3.10.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -157,44 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cluslib_cluster
+# Target rules for targets named cluslib_clusters
 
 # Build rule for target.
-cluslib_cluster: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cluslib_cluster
-.PHONY : cluslib_cluster
+cluslib_clusters: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cluslib_clusters
+.PHONY : cluslib_clusters
 
 # fast build rule for target.
-cluslib_cluster/fast:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/build
-.PHONY : cluslib_cluster/fast
-
-Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.o: Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.o
-
-.PHONY : Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.o
-
-# target to build an object file
-Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.o:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.o
-.PHONY : Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.o
-
-Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.i: Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.i
-
-.PHONY : Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.i
-
-# target to preprocess a source file
-Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.i:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.i
-.PHONY : Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.i
-
-Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.s: Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.s
-
-.PHONY : Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.s
-
-# target to generate assembly for a file
-Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.s:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.s
-.PHONY : Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.s
+cluslib_clusters/fast:
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/build
+.PHONY : cluslib_clusters/fast
 
 centercluster.o: centercluster.cpp.o
 
@@ -202,7 +175,7 @@ centercluster.o: centercluster.cpp.o
 
 # target to build an object file
 centercluster.cpp.o:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/centercluster.cpp.o
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/centercluster.cpp.o
 .PHONY : centercluster.cpp.o
 
 centercluster.i: centercluster.cpp.i
@@ -211,7 +184,7 @@ centercluster.i: centercluster.cpp.i
 
 # target to preprocess a source file
 centercluster.cpp.i:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/centercluster.cpp.i
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/centercluster.cpp.i
 .PHONY : centercluster.cpp.i
 
 centercluster.s: centercluster.cpp.s
@@ -220,7 +193,7 @@ centercluster.s: centercluster.cpp.s
 
 # target to generate assembly for a file
 centercluster.cpp.s:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/centercluster.cpp.s
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/centercluster.cpp.s
 .PHONY : centercluster.cpp.s
 
 hclustering.o: hclustering.cpp.o
@@ -229,7 +202,7 @@ hclustering.o: hclustering.cpp.o
 
 # target to build an object file
 hclustering.cpp.o:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/hclustering.cpp.o
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/hclustering.cpp.o
 .PHONY : hclustering.cpp.o
 
 hclustering.i: hclustering.cpp.i
@@ -238,7 +211,7 @@ hclustering.i: hclustering.cpp.i
 
 # target to preprocess a source file
 hclustering.cpp.i:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/hclustering.cpp.i
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/hclustering.cpp.i
 .PHONY : hclustering.cpp.i
 
 hclustering.s: hclustering.cpp.s
@@ -247,7 +220,7 @@ hclustering.s: hclustering.cpp.s
 
 # target to generate assembly for a file
 hclustering.cpp.s:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/hclustering.cpp.s
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/hclustering.cpp.s
 .PHONY : hclustering.cpp.s
 
 pclustering.o: pclustering.cpp.o
@@ -256,7 +229,7 @@ pclustering.o: pclustering.cpp.o
 
 # target to build an object file
 pclustering.cpp.o:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/pclustering.cpp.o
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/pclustering.cpp.o
 .PHONY : pclustering.cpp.o
 
 pclustering.i: pclustering.cpp.i
@@ -265,7 +238,7 @@ pclustering.i: pclustering.cpp.i
 
 # target to preprocess a source file
 pclustering.cpp.i:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/pclustering.cpp.i
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/pclustering.cpp.i
 .PHONY : pclustering.cpp.i
 
 pclustering.s: pclustering.cpp.s
@@ -274,7 +247,7 @@ pclustering.s: pclustering.cpp.s
 
 # target to generate assembly for a file
 pclustering.cpp.s:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/pclustering.cpp.s
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/pclustering.cpp.s
 .PHONY : pclustering.cpp.s
 
 subspacecluster.o: subspacecluster.cpp.o
@@ -283,7 +256,7 @@ subspacecluster.o: subspacecluster.cpp.o
 
 # target to build an object file
 subspacecluster.cpp.o:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/subspacecluster.cpp.o
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/subspacecluster.cpp.o
 .PHONY : subspacecluster.cpp.o
 
 subspacecluster.i: subspacecluster.cpp.i
@@ -292,7 +265,7 @@ subspacecluster.i: subspacecluster.cpp.i
 
 # target to preprocess a source file
 subspacecluster.cpp.i:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/subspacecluster.cpp.i
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/subspacecluster.cpp.i
 .PHONY : subspacecluster.cpp.i
 
 subspacecluster.s: subspacecluster.cpp.s
@@ -301,7 +274,7 @@ subspacecluster.s: subspacecluster.cpp.s
 
 # target to generate assembly for a file
 subspacecluster.cpp.s:
-	$(MAKE) -f CMakeFiles/cluslib_cluster.dir/build.make CMakeFiles/cluslib_cluster.dir/subspacecluster.cpp.s
+	$(MAKE) -f CMakeFiles/cluslib_clusters.dir/build.make CMakeFiles/cluslib_clusters.dir/subspacecluster.cpp.s
 .PHONY : subspacecluster.cpp.s
 
 # Help Target
@@ -310,16 +283,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... install/local"
-	@echo "... cluslib_cluster"
-	@echo "... Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.o"
-	@echo "... Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.i"
-	@echo "... Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.s"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... cluslib_clusters"
 	@echo "... centercluster.o"
 	@echo "... centercluster.i"
 	@echo "... centercluster.s"

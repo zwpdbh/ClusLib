@@ -44,5 +44,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/cluslib_cluster.dir/DependInfo.cmake"
+  "CMakeFiles/cluslib_clusters.dir/DependInfo.cmake"
   )
