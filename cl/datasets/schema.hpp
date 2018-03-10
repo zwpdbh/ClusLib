@@ -19,7 +19,7 @@ namespace ClusLib {
 /**forward-declare class Record*/
 class Record;
 
-class Schema : public Container<boost::shared_ptr<AttrInfo>> {
+class Schema : public Container<boost::shared_ptr<AttrInfo> > {
     /**The member _data is inherited from class Container and is a vector of
      * shared pointer pointing to the objects of AttrInfo template on
      * boost::shared_ptr<AttrInfo>

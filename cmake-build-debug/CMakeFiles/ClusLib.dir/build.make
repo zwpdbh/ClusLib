@@ -321,6 +321,126 @@ CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o.provides: CMakeFiles/Cl
 CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o.provides.build: CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o
 
 
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o: CMakeFiles/ClusLib.dir/flags.make
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o: ../cl/patterns/leafnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o"
+	/usr/local/opt/llvm/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.cpp
+
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.i"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.cpp > CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.i
+
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.s"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.cpp -o CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.s
+
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.requires:
+
+.PHONY : CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.requires
+
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.provides: CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.provides.build
+.PHONY : CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.provides
+
+CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.provides.build: CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o
+
+
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o: CMakeFiles/ClusLib.dir/flags.make
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o: ../cl/patterns/internalnode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o"
+	/usr/local/opt/llvm/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.cpp
+
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.i"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.cpp > CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.i
+
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.s"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.cpp -o CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.s
+
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.requires:
+
+.PHONY : CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.requires
+
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.provides: CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.provides.build
+.PHONY : CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.provides
+
+CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.provides.build: CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o
+
+
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o: CMakeFiles/ClusLib.dir/flags.make
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o: ../cl/utilities/dendrogram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o"
+	/usr/local/opt/llvm/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.cpp
+
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.i"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.cpp > CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.i
+
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.s"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.cpp -o CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.s
+
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.requires:
+
+.PHONY : CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.requires
+
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.provides: CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.provides.build
+.PHONY : CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.provides
+
+CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.provides.build: CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o
+
+
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o: CMakeFiles/ClusLib.dir/flags.make
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o: ../cl/distance/euclideandistance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o"
+	/usr/local/opt/llvm/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distance/euclideandistance.cpp
+
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.i"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distance/euclideandistance.cpp > CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.i
+
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.s"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distance/euclideandistance.cpp -o CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.s
+
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.requires:
+
+.PHONY : CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.requires
+
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.provides: CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.provides.build
+.PHONY : CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.provides
+
+CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.provides.build: CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o
+
+
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o: CMakeFiles/ClusLib.dir/flags.make
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o: ../cl/distance/minkowskidistance.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o"
+	/usr/local/opt/llvm/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distance/minkowskidistance.cpp
+
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.i"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distance/minkowskidistance.cpp > CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.i
+
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.s"
+	/usr/local/opt/llvm/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distance/minkowskidistance.cpp -o CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.s
+
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.requires:
+
+.PHONY : CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.requires
+
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.provides: CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.provides.build
+.PHONY : CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.provides
+
+CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.provides.build: CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o
+
+
 # Object files for target ClusLib
 ClusLib_OBJECTS = \
 "CMakeFiles/ClusLib.dir/cl/errors.cpp.o" \
@@ -333,7 +453,12 @@ ClusLib_OBJECTS = \
 "CMakeFiles/ClusLib.dir/cl/clusters/centercluster.cpp.o" \
 "CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.o" \
 "CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.o" \
-"CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o"
+"CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o" \
+"CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o" \
+"CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o" \
+"CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o" \
+"CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o" \
+"CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o"
 
 # External object files for target ClusLib
 ClusLib_EXTERNAL_OBJECTS =
@@ -349,9 +474,14 @@ ClusLib_EXTERNAL_OBJECTS =
 ../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.o
 ../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.o
 ../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o
+../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o
+../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o
+../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o
+../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o
+../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o
 ../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/build.make
 ../bin/libClusLib.dylib: CMakeFiles/ClusLib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX shared library ../bin/libClusLib.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX shared library ../bin/libClusLib.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ClusLib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -370,6 +500,11 @@ CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/clusters/centercluste
 CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.o.requires
 CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.o.requires
 CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o.requires
+CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o.requires
+CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o.requires
+CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o.requires
+CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/distance/euclideandistance.cpp.o.requires
+CMakeFiles/ClusLib.dir/requires: CMakeFiles/ClusLib.dir/cl/distance/minkowskidistance.cpp.o.requires
 
 .PHONY : CMakeFiles/ClusLib.dir/requires
 

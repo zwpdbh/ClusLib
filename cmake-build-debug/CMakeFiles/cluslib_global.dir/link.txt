@@ -1,0 +1,1 @@
+/usr/local/opt/llvm/bin/clang++  -std=c++11 -g -dynamiclib -Wl,-headerpad_max_install_names  -o ../bin/libcluslib_global.dylib -install_name @rpath/libcluslib_global.dylib CMakeFiles/cluslib_global.dir/cl/errors.cpp.o 

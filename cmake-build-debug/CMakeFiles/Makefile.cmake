@@ -29,9 +29,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
   "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
+  "../cl/datasets/CMakeLists.txt"
   "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeSystem.cmake"
+  "../examples/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -43,10 +45,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "cl/datasets/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ClusLib.dir/DependInfo.cmake"
-  "CMakeFiles/dataset_example.dir/DependInfo.cmake"
+  "CMakeFiles/cluslib_global.dir/DependInfo.cmake"
+  "cl/datasets/CMakeFiles/cluslib_dataset.dir/DependInfo.cmake"
+  "examples/CMakeFiles/dataset_example.dir/DependInfo.cmake"
   )

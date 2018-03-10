@@ -199,16 +199,22 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-ClusLib_BINARY_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug
+ClusLib_BINARY_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples
 
 //Dependencies for target
 ClusLib_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-ClusLib_SOURCE_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib
+ClusLib_SOURCE_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib/examples
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
+
+//Dependencies for the target
+cluslib_dataset_LIB_DEPENDS:STATIC=general;cluslib_global;
+
+//Dependencies for target
+cluslib_global_LIB_DEPENDS:STATIC=
 
 
 ########################
@@ -317,7 +323,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

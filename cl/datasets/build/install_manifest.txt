@@ -1,0 +1,8 @@
+/usr/local/lib/ClusLib/libcluslib_dataset.dylib
+/usr/local/include/ClusLib/cl/datasets/attrinfo.hpp
+/usr/local/include/ClusLib/cl/datasets/attrvalue.h
+/usr/local/include/ClusLib/cl/datasets/cattrinfo.hpp
+/usr/local/include/ClusLib/cl/datasets/dataset.hpp
+/usr/local/include/ClusLib/cl/datasets/dattrinfo.hpp
+/usr/local/include/ClusLib/cl/datasets/record.hpp
+/usr/local/include/ClusLib/cl/datasets/schema.hpp

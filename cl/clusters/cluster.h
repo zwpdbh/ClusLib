@@ -14,7 +14,7 @@
 #include <vector>
 
 namespace ClusLib {
-class Cluster : public Container<boost::shared_ptr<Record>> {
+class Cluster : public Container<boost::shared_ptr<Record> > {
   public:
     virtual ~Cluster() {}
 

@@ -60,76 +60,150 @@ CMAKE_SOURCE_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib
 CMAKE_BINARY_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ClusLib.dir
+# Target rules for target CMakeFiles/cluslib_global.dir
 
 # All Build rule for target.
-CMakeFiles/ClusLib.dir/all:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/depend
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ClusLib"
-.PHONY : CMakeFiles/ClusLib.dir/all
+CMakeFiles/cluslib_global.dir/all:
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/depend
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target cluslib_global"
+.PHONY : CMakeFiles/cluslib_global.dir/all
 
 # Include target in all.
-all: CMakeFiles/ClusLib.dir/all
+all: CMakeFiles/cluslib_global.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ClusLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ClusLib.dir/all
+CMakeFiles/cluslib_global.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cluslib_global.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ClusLib.dir/rule
+.PHONY : CMakeFiles/cluslib_global.dir/rule
 
 # Convenience name for target.
-ClusLib: CMakeFiles/ClusLib.dir/rule
+cluslib_global: CMakeFiles/cluslib_global.dir/rule
 
-.PHONY : ClusLib
-
-# clean rule for target.
-CMakeFiles/ClusLib.dir/clean:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/clean
-.PHONY : CMakeFiles/ClusLib.dir/clean
+.PHONY : cluslib_global
 
 # clean rule for target.
-clean: CMakeFiles/ClusLib.dir/clean
+CMakeFiles/cluslib_global.dir/clean:
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/clean
+.PHONY : CMakeFiles/cluslib_global.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cluslib_global.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/dataset_example.dir
+# Directory level rules for directory cl/datasets
+
+# Convenience name for "all" pass in the directory.
+cl/datasets/all: cl/datasets/CMakeFiles/cluslib_dataset.dir/all
+
+.PHONY : cl/datasets/all
+
+# Convenience name for "clean" pass in the directory.
+cl/datasets/clean: cl/datasets/CMakeFiles/cluslib_dataset.dir/clean
+
+.PHONY : cl/datasets/clean
+
+# Convenience name for "preinstall" pass in the directory.
+cl/datasets/preinstall:
+
+.PHONY : cl/datasets/preinstall
+
+#=============================================================================
+# Target rules for target cl/datasets/CMakeFiles/cluslib_dataset.dir
 
 # All Build rule for target.
-CMakeFiles/dataset_example.dir/all: CMakeFiles/ClusLib.dir/all
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/depend
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target dataset_example"
-.PHONY : CMakeFiles/dataset_example.dir/all
+cl/datasets/CMakeFiles/cluslib_dataset.dir/all: CMakeFiles/cluslib_global.dir/all
+	$(MAKE) -f cl/datasets/CMakeFiles/cluslib_dataset.dir/build.make cl/datasets/CMakeFiles/cluslib_dataset.dir/depend
+	$(MAKE) -f cl/datasets/CMakeFiles/cluslib_dataset.dir/build.make cl/datasets/CMakeFiles/cluslib_dataset.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target cluslib_dataset"
+.PHONY : cl/datasets/CMakeFiles/cluslib_dataset.dir/all
 
 # Include target in all.
-all: CMakeFiles/dataset_example.dir/all
+all: cl/datasets/CMakeFiles/cluslib_dataset.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/dataset_example.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 14
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/dataset_example.dir/all
+cl/datasets/CMakeFiles/cluslib_dataset.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 cl/datasets/CMakeFiles/cluslib_dataset.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/dataset_example.dir/rule
+.PHONY : cl/datasets/CMakeFiles/cluslib_dataset.dir/rule
 
 # Convenience name for target.
-dataset_example: CMakeFiles/dataset_example.dir/rule
+cluslib_dataset: cl/datasets/CMakeFiles/cluslib_dataset.dir/rule
+
+.PHONY : cluslib_dataset
+
+# clean rule for target.
+cl/datasets/CMakeFiles/cluslib_dataset.dir/clean:
+	$(MAKE) -f cl/datasets/CMakeFiles/cluslib_dataset.dir/build.make cl/datasets/CMakeFiles/cluslib_dataset.dir/clean
+.PHONY : cl/datasets/CMakeFiles/cluslib_dataset.dir/clean
+
+# clean rule for target.
+clean: cl/datasets/CMakeFiles/cluslib_dataset.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory examples
+
+# Convenience name for "all" pass in the directory.
+examples/all: examples/CMakeFiles/dataset_example.dir/all
+
+.PHONY : examples/all
+
+# Convenience name for "clean" pass in the directory.
+examples/clean: examples/CMakeFiles/dataset_example.dir/clean
+
+.PHONY : examples/clean
+
+# Convenience name for "preinstall" pass in the directory.
+examples/preinstall:
+
+.PHONY : examples/preinstall
+
+#=============================================================================
+# Target rules for target examples/CMakeFiles/dataset_example.dir
+
+# All Build rule for target.
+examples/CMakeFiles/dataset_example.dir/all: CMakeFiles/cluslib_global.dir/all
+examples/CMakeFiles/dataset_example.dir/all: cl/datasets/CMakeFiles/cluslib_dataset.dir/all
+	$(MAKE) -f examples/CMakeFiles/dataset_example.dir/build.make examples/CMakeFiles/dataset_example.dir/depend
+	$(MAKE) -f examples/CMakeFiles/dataset_example.dir/build.make examples/CMakeFiles/dataset_example.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target dataset_example"
+.PHONY : examples/CMakeFiles/dataset_example.dir/all
+
+# Include target in all.
+all: examples/CMakeFiles/dataset_example.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+examples/CMakeFiles/dataset_example.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 examples/CMakeFiles/dataset_example.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 0
+.PHONY : examples/CMakeFiles/dataset_example.dir/rule
+
+# Convenience name for target.
+dataset_example: examples/CMakeFiles/dataset_example.dir/rule
 
 .PHONY : dataset_example
 
 # clean rule for target.
-CMakeFiles/dataset_example.dir/clean:
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/clean
-.PHONY : CMakeFiles/dataset_example.dir/clean
+examples/CMakeFiles/dataset_example.dir/clean:
+	$(MAKE) -f examples/CMakeFiles/dataset_example.dir/build.make examples/CMakeFiles/dataset_example.dir/clean
+.PHONY : examples/CMakeFiles/dataset_example.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/dataset_example.dir/clean
+clean: examples/CMakeFiles/dataset_example.dir/clean
 
 .PHONY : clean
 

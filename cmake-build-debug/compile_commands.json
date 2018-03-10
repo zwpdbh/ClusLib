@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_global_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib   -std=c++11 -g -fPIC   -Wno-c++11-extensions -o CMakeFiles/cluslib_global.dir/cl/errors.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_dataset_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g -fPIC   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/cluslib_dataset.dir/attrinfo.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/attrinfo.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/attrinfo.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_dataset_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g -fPIC   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/cluslib_dataset.dir/cattrinfo.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/cattrinfo.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/cattrinfo.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_dataset_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g -fPIC   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/cluslib_dataset.dir/dataset.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dataset.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dataset.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_dataset_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g -fPIC   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/cluslib_dataset.dir/dattrinfo.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dattrinfo.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dattrinfo.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_dataset_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g -fPIC   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/cluslib_dataset.dir/record.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/record.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/record.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_dataset_EXPORTS -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g -fPIC   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/cluslib_dataset.dir/schema.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/schema.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/schema.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples",
+  "command": "/usr/local/opt/llvm/bin/clang++   -I/usr/local/include -I/Users/zw/code/C_and_C++_Projects/ClusLib -I/usr/local/include/ClusLib   -std=c++11 -std=c++11 -g   -Wno-c++11-extensions -Wno-c++11-extensions -o CMakeFiles/dataset_example.dir/dataset_example_main.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/examples/dataset_example_main.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/examples/dataset_example_main.cpp"
+}
+]

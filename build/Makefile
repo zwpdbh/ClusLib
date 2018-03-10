@@ -56,6 +56,52 @@ CMAKE_BINARY_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/local/Cellar/cmake/3.10.2/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -111,300 +157,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ClusLib
+# Target rules for targets named cluslib_global
 
 # Build rule for target.
-ClusLib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ClusLib
-.PHONY : ClusLib
+cluslib_global: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cluslib_global
+.PHONY : cluslib_global
 
 # fast build rule for target.
-ClusLib/fast:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/build
-.PHONY : ClusLib/fast
-
-#=============================================================================
-# Target rules for targets named dataset_example
-
-# Build rule for target.
-dataset_example: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dataset_example
-.PHONY : dataset_example
-
-# fast build rule for target.
-dataset_example/fast:
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/build
-.PHONY : dataset_example/fast
-
-cl/clusters/centercluster.o: cl/clusters/centercluster.cpp.o
-
-.PHONY : cl/clusters/centercluster.o
-
-# target to build an object file
-cl/clusters/centercluster.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/centercluster.cpp.o
-.PHONY : cl/clusters/centercluster.cpp.o
-
-cl/clusters/centercluster.i: cl/clusters/centercluster.cpp.i
-
-.PHONY : cl/clusters/centercluster.i
-
-# target to preprocess a source file
-cl/clusters/centercluster.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/centercluster.cpp.i
-.PHONY : cl/clusters/centercluster.cpp.i
-
-cl/clusters/centercluster.s: cl/clusters/centercluster.cpp.s
-
-.PHONY : cl/clusters/centercluster.s
-
-# target to generate assembly for a file
-cl/clusters/centercluster.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/centercluster.cpp.s
-.PHONY : cl/clusters/centercluster.cpp.s
-
-cl/clusters/hclustering.o: cl/clusters/hclustering.cpp.o
-
-.PHONY : cl/clusters/hclustering.o
-
-# target to build an object file
-cl/clusters/hclustering.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.o
-.PHONY : cl/clusters/hclustering.cpp.o
-
-cl/clusters/hclustering.i: cl/clusters/hclustering.cpp.i
-
-.PHONY : cl/clusters/hclustering.i
-
-# target to preprocess a source file
-cl/clusters/hclustering.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.i
-.PHONY : cl/clusters/hclustering.cpp.i
-
-cl/clusters/hclustering.s: cl/clusters/hclustering.cpp.s
-
-.PHONY : cl/clusters/hclustering.s
-
-# target to generate assembly for a file
-cl/clusters/hclustering.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/hclustering.cpp.s
-.PHONY : cl/clusters/hclustering.cpp.s
-
-cl/clusters/pclustering.o: cl/clusters/pclustering.cpp.o
-
-.PHONY : cl/clusters/pclustering.o
-
-# target to build an object file
-cl/clusters/pclustering.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.o
-.PHONY : cl/clusters/pclustering.cpp.o
-
-cl/clusters/pclustering.i: cl/clusters/pclustering.cpp.i
-
-.PHONY : cl/clusters/pclustering.i
-
-# target to preprocess a source file
-cl/clusters/pclustering.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.i
-.PHONY : cl/clusters/pclustering.cpp.i
-
-cl/clusters/pclustering.s: cl/clusters/pclustering.cpp.s
-
-.PHONY : cl/clusters/pclustering.s
-
-# target to generate assembly for a file
-cl/clusters/pclustering.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/pclustering.cpp.s
-.PHONY : cl/clusters/pclustering.cpp.s
-
-cl/clusters/subspacecluster.o: cl/clusters/subspacecluster.cpp.o
-
-.PHONY : cl/clusters/subspacecluster.o
-
-# target to build an object file
-cl/clusters/subspacecluster.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.o
-.PHONY : cl/clusters/subspacecluster.cpp.o
-
-cl/clusters/subspacecluster.i: cl/clusters/subspacecluster.cpp.i
-
-.PHONY : cl/clusters/subspacecluster.i
-
-# target to preprocess a source file
-cl/clusters/subspacecluster.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.i
-.PHONY : cl/clusters/subspacecluster.cpp.i
-
-cl/clusters/subspacecluster.s: cl/clusters/subspacecluster.cpp.s
-
-.PHONY : cl/clusters/subspacecluster.s
-
-# target to generate assembly for a file
-cl/clusters/subspacecluster.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/clusters/subspacecluster.cpp.s
-.PHONY : cl/clusters/subspacecluster.cpp.s
-
-cl/datasets/attrinfo.o: cl/datasets/attrinfo.cpp.o
-
-.PHONY : cl/datasets/attrinfo.o
-
-# target to build an object file
-cl/datasets/attrinfo.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/attrinfo.cpp.o
-.PHONY : cl/datasets/attrinfo.cpp.o
-
-cl/datasets/attrinfo.i: cl/datasets/attrinfo.cpp.i
-
-.PHONY : cl/datasets/attrinfo.i
-
-# target to preprocess a source file
-cl/datasets/attrinfo.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/attrinfo.cpp.i
-.PHONY : cl/datasets/attrinfo.cpp.i
-
-cl/datasets/attrinfo.s: cl/datasets/attrinfo.cpp.s
-
-.PHONY : cl/datasets/attrinfo.s
-
-# target to generate assembly for a file
-cl/datasets/attrinfo.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/attrinfo.cpp.s
-.PHONY : cl/datasets/attrinfo.cpp.s
-
-cl/datasets/cattrinfo.o: cl/datasets/cattrinfo.cpp.o
-
-.PHONY : cl/datasets/cattrinfo.o
-
-# target to build an object file
-cl/datasets/cattrinfo.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/cattrinfo.cpp.o
-.PHONY : cl/datasets/cattrinfo.cpp.o
-
-cl/datasets/cattrinfo.i: cl/datasets/cattrinfo.cpp.i
-
-.PHONY : cl/datasets/cattrinfo.i
-
-# target to preprocess a source file
-cl/datasets/cattrinfo.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/cattrinfo.cpp.i
-.PHONY : cl/datasets/cattrinfo.cpp.i
-
-cl/datasets/cattrinfo.s: cl/datasets/cattrinfo.cpp.s
-
-.PHONY : cl/datasets/cattrinfo.s
-
-# target to generate assembly for a file
-cl/datasets/cattrinfo.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/cattrinfo.cpp.s
-.PHONY : cl/datasets/cattrinfo.cpp.s
-
-cl/datasets/dataset.o: cl/datasets/dataset.cpp.o
-
-.PHONY : cl/datasets/dataset.o
-
-# target to build an object file
-cl/datasets/dataset.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/dataset.cpp.o
-.PHONY : cl/datasets/dataset.cpp.o
-
-cl/datasets/dataset.i: cl/datasets/dataset.cpp.i
-
-.PHONY : cl/datasets/dataset.i
-
-# target to preprocess a source file
-cl/datasets/dataset.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/dataset.cpp.i
-.PHONY : cl/datasets/dataset.cpp.i
-
-cl/datasets/dataset.s: cl/datasets/dataset.cpp.s
-
-.PHONY : cl/datasets/dataset.s
-
-# target to generate assembly for a file
-cl/datasets/dataset.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/dataset.cpp.s
-.PHONY : cl/datasets/dataset.cpp.s
-
-cl/datasets/dattrinfo.o: cl/datasets/dattrinfo.cpp.o
-
-.PHONY : cl/datasets/dattrinfo.o
-
-# target to build an object file
-cl/datasets/dattrinfo.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/dattrinfo.cpp.o
-.PHONY : cl/datasets/dattrinfo.cpp.o
-
-cl/datasets/dattrinfo.i: cl/datasets/dattrinfo.cpp.i
-
-.PHONY : cl/datasets/dattrinfo.i
-
-# target to preprocess a source file
-cl/datasets/dattrinfo.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/dattrinfo.cpp.i
-.PHONY : cl/datasets/dattrinfo.cpp.i
-
-cl/datasets/dattrinfo.s: cl/datasets/dattrinfo.cpp.s
-
-.PHONY : cl/datasets/dattrinfo.s
-
-# target to generate assembly for a file
-cl/datasets/dattrinfo.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/dattrinfo.cpp.s
-.PHONY : cl/datasets/dattrinfo.cpp.s
-
-cl/datasets/record.o: cl/datasets/record.cpp.o
-
-.PHONY : cl/datasets/record.o
-
-# target to build an object file
-cl/datasets/record.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/record.cpp.o
-.PHONY : cl/datasets/record.cpp.o
-
-cl/datasets/record.i: cl/datasets/record.cpp.i
-
-.PHONY : cl/datasets/record.i
-
-# target to preprocess a source file
-cl/datasets/record.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/record.cpp.i
-.PHONY : cl/datasets/record.cpp.i
-
-cl/datasets/record.s: cl/datasets/record.cpp.s
-
-.PHONY : cl/datasets/record.s
-
-# target to generate assembly for a file
-cl/datasets/record.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/record.cpp.s
-.PHONY : cl/datasets/record.cpp.s
-
-cl/datasets/schema.o: cl/datasets/schema.cpp.o
-
-.PHONY : cl/datasets/schema.o
-
-# target to build an object file
-cl/datasets/schema.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/schema.cpp.o
-.PHONY : cl/datasets/schema.cpp.o
-
-cl/datasets/schema.i: cl/datasets/schema.cpp.i
-
-.PHONY : cl/datasets/schema.i
-
-# target to preprocess a source file
-cl/datasets/schema.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/schema.cpp.i
-.PHONY : cl/datasets/schema.cpp.i
-
-cl/datasets/schema.s: cl/datasets/schema.cpp.s
-
-.PHONY : cl/datasets/schema.s
-
-# target to generate assembly for a file
-cl/datasets/schema.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/datasets/schema.cpp.s
-.PHONY : cl/datasets/schema.cpp.s
+cluslib_global/fast:
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/build
+.PHONY : cluslib_global/fast
 
 cl/errors.o: cl/errors.cpp.o
 
@@ -412,7 +175,7 @@ cl/errors.o: cl/errors.cpp.o
 
 # target to build an object file
 cl/errors.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/errors.cpp.o
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/cl/errors.cpp.o
 .PHONY : cl/errors.cpp.o
 
 cl/errors.i: cl/errors.cpp.i
@@ -421,7 +184,7 @@ cl/errors.i: cl/errors.cpp.i
 
 # target to preprocess a source file
 cl/errors.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/errors.cpp.i
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/cl/errors.cpp.i
 .PHONY : cl/errors.cpp.i
 
 cl/errors.s: cl/errors.cpp.s
@@ -430,116 +193,8 @@ cl/errors.s: cl/errors.cpp.s
 
 # target to generate assembly for a file
 cl/errors.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/errors.cpp.s
+	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/cl/errors.cpp.s
 .PHONY : cl/errors.cpp.s
-
-cl/patterns/internalnode.o: cl/patterns/internalnode.cpp.o
-
-.PHONY : cl/patterns/internalnode.o
-
-# target to build an object file
-cl/patterns/internalnode.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.o
-.PHONY : cl/patterns/internalnode.cpp.o
-
-cl/patterns/internalnode.i: cl/patterns/internalnode.cpp.i
-
-.PHONY : cl/patterns/internalnode.i
-
-# target to preprocess a source file
-cl/patterns/internalnode.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.i
-.PHONY : cl/patterns/internalnode.cpp.i
-
-cl/patterns/internalnode.s: cl/patterns/internalnode.cpp.s
-
-.PHONY : cl/patterns/internalnode.s
-
-# target to generate assembly for a file
-cl/patterns/internalnode.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/internalnode.cpp.s
-.PHONY : cl/patterns/internalnode.cpp.s
-
-cl/patterns/leafnode.o: cl/patterns/leafnode.cpp.o
-
-.PHONY : cl/patterns/leafnode.o
-
-# target to build an object file
-cl/patterns/leafnode.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.o
-.PHONY : cl/patterns/leafnode.cpp.o
-
-cl/patterns/leafnode.i: cl/patterns/leafnode.cpp.i
-
-.PHONY : cl/patterns/leafnode.i
-
-# target to preprocess a source file
-cl/patterns/leafnode.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.i
-.PHONY : cl/patterns/leafnode.cpp.i
-
-cl/patterns/leafnode.s: cl/patterns/leafnode.cpp.s
-
-.PHONY : cl/patterns/leafnode.s
-
-# target to generate assembly for a file
-cl/patterns/leafnode.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/patterns/leafnode.cpp.s
-.PHONY : cl/patterns/leafnode.cpp.s
-
-cl/utilities/dendrogram.o: cl/utilities/dendrogram.cpp.o
-
-.PHONY : cl/utilities/dendrogram.o
-
-# target to build an object file
-cl/utilities/dendrogram.cpp.o:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.o
-.PHONY : cl/utilities/dendrogram.cpp.o
-
-cl/utilities/dendrogram.i: cl/utilities/dendrogram.cpp.i
-
-.PHONY : cl/utilities/dendrogram.i
-
-# target to preprocess a source file
-cl/utilities/dendrogram.cpp.i:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.i
-.PHONY : cl/utilities/dendrogram.cpp.i
-
-cl/utilities/dendrogram.s: cl/utilities/dendrogram.cpp.s
-
-.PHONY : cl/utilities/dendrogram.s
-
-# target to generate assembly for a file
-cl/utilities/dendrogram.cpp.s:
-	$(MAKE) -f CMakeFiles/ClusLib.dir/build.make CMakeFiles/ClusLib.dir/cl/utilities/dendrogram.cpp.s
-.PHONY : cl/utilities/dendrogram.cpp.s
-
-examples/dataset_example_main.o: examples/dataset_example_main.cpp.o
-
-.PHONY : examples/dataset_example_main.o
-
-# target to build an object file
-examples/dataset_example_main.cpp.o:
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/examples/dataset_example_main.cpp.o
-.PHONY : examples/dataset_example_main.cpp.o
-
-examples/dataset_example_main.i: examples/dataset_example_main.cpp.i
-
-.PHONY : examples/dataset_example_main.i
-
-# target to preprocess a source file
-examples/dataset_example_main.cpp.i:
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/examples/dataset_example_main.cpp.i
-.PHONY : examples/dataset_example_main.cpp.i
-
-examples/dataset_example_main.s: examples/dataset_example_main.cpp.s
-
-.PHONY : examples/dataset_example_main.s
-
-# target to generate assembly for a file
-examples/dataset_example_main.cpp.s:
-	$(MAKE) -f CMakeFiles/dataset_example.dir/build.make CMakeFiles/dataset_example.dir/examples/dataset_example_main.cpp.s
-.PHONY : examples/dataset_example_main.cpp.s
 
 # Help Target
 help:
@@ -547,55 +202,16 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... ClusLib"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... dataset_example"
-	@echo "... cl/clusters/centercluster.o"
-	@echo "... cl/clusters/centercluster.i"
-	@echo "... cl/clusters/centercluster.s"
-	@echo "... cl/clusters/hclustering.o"
-	@echo "... cl/clusters/hclustering.i"
-	@echo "... cl/clusters/hclustering.s"
-	@echo "... cl/clusters/pclustering.o"
-	@echo "... cl/clusters/pclustering.i"
-	@echo "... cl/clusters/pclustering.s"
-	@echo "... cl/clusters/subspacecluster.o"
-	@echo "... cl/clusters/subspacecluster.i"
-	@echo "... cl/clusters/subspacecluster.s"
-	@echo "... cl/datasets/attrinfo.o"
-	@echo "... cl/datasets/attrinfo.i"
-	@echo "... cl/datasets/attrinfo.s"
-	@echo "... cl/datasets/cattrinfo.o"
-	@echo "... cl/datasets/cattrinfo.i"
-	@echo "... cl/datasets/cattrinfo.s"
-	@echo "... cl/datasets/dataset.o"
-	@echo "... cl/datasets/dataset.i"
-	@echo "... cl/datasets/dataset.s"
-	@echo "... cl/datasets/dattrinfo.o"
-	@echo "... cl/datasets/dattrinfo.i"
-	@echo "... cl/datasets/dattrinfo.s"
-	@echo "... cl/datasets/record.o"
-	@echo "... cl/datasets/record.i"
-	@echo "... cl/datasets/record.s"
-	@echo "... cl/datasets/schema.o"
-	@echo "... cl/datasets/schema.i"
-	@echo "... cl/datasets/schema.s"
+	@echo "... cluslib_global"
 	@echo "... cl/errors.o"
 	@echo "... cl/errors.i"
 	@echo "... cl/errors.s"
-	@echo "... cl/patterns/internalnode.o"
-	@echo "... cl/patterns/internalnode.i"
-	@echo "... cl/patterns/internalnode.s"
-	@echo "... cl/patterns/leafnode.o"
-	@echo "... cl/patterns/leafnode.i"
-	@echo "... cl/patterns/leafnode.s"
-	@echo "... cl/utilities/dendrogram.o"
-	@echo "... cl/utilities/dendrogram.i"
-	@echo "... cl/utilities/dendrogram.s"
-	@echo "... examples/dataset_example_main.o"
-	@echo "... examples/dataset_example_main.i"
-	@echo "... examples/dataset_example_main.s"
 .PHONY : help
 
 

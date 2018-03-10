@@ -1,0 +1,4 @@
+/usr/local/lib/ClusLib/libcluslib_global.dylib
+/usr/local/include/ClusLib/cl/errors.hpp
+/usr/local/include/ClusLib/cl/cldefines.h
+/usr/local/include/ClusLib/cl/types.h

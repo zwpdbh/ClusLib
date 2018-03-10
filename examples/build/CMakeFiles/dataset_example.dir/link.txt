@@ -1,0 +1,1 @@
+/usr/local/opt/llvm/bin/clang++   -std=c++11 -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/dataset_example.dir/dataset_example_main.cpp.o  -o ../bin/dataset_example  -L/usr/local/lib/ClusLib -Wl,-rpath,/usr/local/lib/ClusLib -lcluslib_dataset -lcluslib_global 

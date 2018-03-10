@@ -5,7 +5,7 @@
 		<Option title="ClusLib"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cl\;CMake Files\cl\datasets\;CMake Files\examples\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
@@ -17,45 +17,41 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ClusLib">
-				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libClusLib.dylib" prefix_auto="0" extension_auto="0"/>
+			<Target title="install/local">
 				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
-					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
-					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClusLib"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ClusLib/fast">
-				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libClusLib.dylib" prefix_auto="0" extension_auto="0"/>
+			<Target title="install/strip">
 				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="3"/>
-				<Option compiler="clang"/>
-				<Compiler>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
-					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
-					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
+				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 ClusLib/fast"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,11 +77,11 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="dataset_example">
-				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/dataset_example" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/bin"/>
+			<Target title="cluslib_global">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_global.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="3"/>
 				<Option compiler="clang"/>
 				<Compiler>
 					<Add directory="/usr/local/include"/>
@@ -97,10 +93,101 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 dataset_example"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 cluslib_global"/>
 					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cluslib_global/fast">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_global.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 cluslib_global/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cluslib_dataset">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_dataset.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 cluslib_dataset"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cluslib_dataset/fast">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_dataset.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 cluslib_dataset/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="dataset_example">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/dataset_example" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 dataset_example"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="dataset_example/fast">
@@ -112,6 +199,7 @@
 				<Compiler>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
 					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
 					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
 					<Add directory="/usr/include"/>
@@ -119,105 +207,75 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 dataset_example/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 dataset_example/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/cldefines.h">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/centercluster.cpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/centercluster.hpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cluster.h">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.cpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.cpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/subspacecluster.cpp">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/subspacecluster.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_global"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/attrinfo.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/attrinfo.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/attrvalue.h">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/cattrinfo.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/cattrinfo.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dataset.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dataset.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dattrinfo.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/dattrinfo.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/record.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/record.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/schema.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/schema.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_dataset"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_global"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.hpp">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_global"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/types.h">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/container.h">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/nnmap.h">
-			<Option target="ClusLib"/>
-		</Unit>
-		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/null.h">
-			<Option target="ClusLib"/>
+			<Option target="cluslib_global"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/examples/dataset_example_main.cpp">
 			<Option target="dataset_example"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cl\datasets\"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\examples\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
