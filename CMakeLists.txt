@@ -19,6 +19,8 @@ include_directories("/usr/include")
 include_directories("/Users/zw/code/C_and_C++_Projects/ClusLib")
 
 add_subdirectory(cl/datasets)
+add_subdirectory(cl/patterns)
+add_subdirectory(cl/clusters)
 add_subdirectory(examples)
 
 

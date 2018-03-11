@@ -183,6 +183,32 @@ cluslib_dataset/fast:
 .PHONY : cluslib_dataset/fast
 
 #=============================================================================
+# Target rules for targets named cluslib_patterns
+
+# Build rule for target.
+cluslib_patterns: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cluslib_patterns
+.PHONY : cluslib_patterns
+
+# fast build rule for target.
+cluslib_patterns/fast:
+	$(MAKE) -f cl/patterns/CMakeFiles/cluslib_patterns.dir/build.make cl/patterns/CMakeFiles/cluslib_patterns.dir/build
+.PHONY : cluslib_patterns/fast
+
+#=============================================================================
+# Target rules for targets named cluslib_clusters
+
+# Build rule for target.
+cluslib_clusters: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cluslib_clusters
+.PHONY : cluslib_clusters
+
+# fast build rule for target.
+cluslib_clusters/fast:
+	$(MAKE) -f cl/clusters/CMakeFiles/cluslib_clusters.dir/build.make cl/clusters/CMakeFiles/cluslib_clusters.dir/build
+.PHONY : cluslib_clusters/fast
+
+#=============================================================================
 # Target rules for targets named dataset_example
 
 # Build rule for target.
@@ -236,6 +262,8 @@ help:
 	@echo "... edit_cache"
 	@echo "... cluslib_global"
 	@echo "... cluslib_dataset"
+	@echo "... cluslib_patterns"
+	@echo "... cluslib_clusters"
 	@echo "... dataset_example"
 	@echo "... cl/errors.o"
 	@echo "... cl/errors.i"

@@ -5,7 +5,7 @@
 		<Option title="ClusLib"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="clang"/>
-		<Option virtualFolders="CMake Files\;CMake Files\cl\;CMake Files\cl\datasets\;CMake Files\examples\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cl\;CMake Files\cl\datasets\;CMake Files\cl\patterns\;CMake Files\cl\clusters\;CMake Files\examples\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug"/>
@@ -167,6 +167,98 @@
 					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cluslib_patterns">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_patterns.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 cluslib_patterns"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cluslib_patterns/fast">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_patterns.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 cluslib_patterns/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cluslib_clusters">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_clusters.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 cluslib_clusters"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cluslib_clusters/fast">
+				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/libcluslib_clusters.dylib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Users/zw/code/C_and_C++_Projects/ClusLib"/>
+					<Add directory="/usr/local/include/ClusLib"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/include/c++/v1"/>
+					<Add directory="/usr/local/Cellar/llvm/5.0.1/lib/clang/5.0.1/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 cluslib_clusters/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="dataset_example">
 				<Option output="/Users/zw/code/C_and_C++_Projects/ClusLib/bin/dataset_example" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/zw/code/C_and_C++_Projects/ClusLib/bin"/>
@@ -217,6 +309,33 @@
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/cldefines.h">
 			<Option target="cluslib_global"/>
 		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/centercluster.cpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/centercluster.hpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cluster.h">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.cpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.cpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/subspacecluster.cpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/subspacecluster.hpp">
+			<Option target="cluslib_clusters"/>
+		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/attrinfo.cpp">
 			<Option target="cluslib_dataset"/>
 		</Unit>
@@ -262,6 +381,36 @@
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.hpp">
 			<Option target="cluslib_global"/>
 		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.cpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.hpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/joinvaluevisitor.cpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/joinvaluevisitor.hpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.cpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.hpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/node.hpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/nodevisitor.hpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/pcvisitor.cpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/pcvisitor.hpp">
+			<Option target="cluslib_patterns"/>
+		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/types.h">
 			<Option target="cluslib_global"/>
 		</Unit>
@@ -273,6 +422,12 @@
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/datasets/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\cl\datasets\"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cl\patterns\"/>
+		</Unit>
+		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cl\clusters\"/>
 		</Unit>
 		<Unit filename="/Users/zw/code/C_and_C++_Projects/ClusLib/examples/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\examples\"/>

@@ -51,6 +51,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp"
     "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp"
     "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/subspacecluster.hpp"
+    "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cluster.h"
     )
 endif()
 

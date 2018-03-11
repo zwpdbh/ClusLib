@@ -3,8 +3,10 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="ClusLib" targetName="cluslib_dataset" />
-      <config projectName="ClusLib" targetName="cluslib_global" />
       <config projectName="ClusLib" targetName="dataset_example" />
+      <config projectName="ClusLib" targetName="cluslib_patterns" />
+      <config projectName="ClusLib" targetName="cluslib_clusters" />
+      <config projectName="ClusLib" targetName="cluslib_global" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,41 +16,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c6d216a-e033-4d90-89f9-9a63e8b30f47" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cl/patterns/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cl/patterns/joinvaluevisitor.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cl/patterns/joinvaluevisitor.hpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cl/patterns/pcvisitor.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/cl/patterns/pcvisitor.hpp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
       <change beforePath="$PROJECT_DIR$/cl/clusters/CMakeLists.txt" afterPath="$PROJECT_DIR$/cl/clusters/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeCache.txt" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/CMakeOutput.log" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Makefile.cmake" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/1" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/6" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/count.txt" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/Progress/count.txt" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/TargetDirectories.txt" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/CXX.includecache" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/DependInfo.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/Users/zw/code/C_and_C++_Projects/ClusLib/cl/errors.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/build.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/centercluster.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/cmake_clean.cmake" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/depend.internal" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/depend.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/flags.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/hclustering.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/link.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/pclustering.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/progress.make" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/cluslib_cluster.dir/subspacecluster.cpp.o" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cl/clusters/build/CMakeFiles/progress.marks" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/Makefile" afterPath="$PROJECT_DIR$/cl/clusters/build/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/cmake_install.cmake" afterPath="$PROJECT_DIR$/cl/clusters/build/cmake_install.cmake" />
-      <change beforePath="$PROJECT_DIR$/cl/clusters/build/compile_commands.json" afterPath="$PROJECT_DIR$/cl/clusters/build/compile_commands.json" />
-      <change beforePath="$PROJECT_DIR$/cl/datasets/build/CMakeFiles/cluslib_dataset.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cl/datasets/build/CMakeFiles/cluslib_dataset.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cl/datasets/build/CMakeFiles/cluslib_dataset.dir/flags.make" afterPath="$PROJECT_DIR$/cl/datasets/build/CMakeFiles/cluslib_dataset.dir/flags.make" />
-      <change beforePath="$PROJECT_DIR$/cl/datasets/build/compile_commands.json" afterPath="$PROJECT_DIR$/cl/datasets/build/compile_commands.json" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="$PROJECT_DIR$/cl/clusters/hclustering.cpp" afterPath="$PROJECT_DIR$/cl/clusters/hclustering.cpp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cluslib_global.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cluslib_global.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ClusLib.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/ClusLib.cbp" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cl/datasets/CMakeFiles/cluslib_dataset.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/cl/datasets/CMakeFiles/cluslib_dataset.dir/progress.make" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/examples/CMakeFiles/dataset_example.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/examples/CMakeFiles/dataset_example.dir/progress.make" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,11 +56,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cl/datasets/CMakeLists.txt">
+      <file leaf-file-name="joinvaluevisitor.hpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cl/patterns/joinvaluevisitor.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+            <state relative-caret-position="67">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -82,6 +71,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dataset</find>
+      <find>cl_clusters</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,11 +85,13 @@
         <option value="$PROJECT_DIR$/cl/utilities/nnmap.h" />
         <option value="$PROJECT_DIR$/cl/datasets/schema.hpp" />
         <option value="$PROJECT_DIR$/cl/clusters/cluster.h" />
-        <option value="$PROJECT_DIR$/cl/clusters/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cl/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/examples/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/cl/datasets/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cl/patterns/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cl/clusters/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/cl/patterns/joinvaluevisitor.hpp" />
       </list>
     </option>
   </component>
@@ -110,9 +102,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="y" value="405" />
     <option name="width" value="1440" />
-    <option name="height" value="837" />
+    <option name="height" value="455" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -148,7 +140,13 @@
               <item name="ClusLib" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="ClusLib" type="462c0819:PsiDirectoryNode" />
               <item name="cl" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+              <item name="clusters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ClusLib" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="ClusLib" type="462c0819:PsiDirectoryNode" />
+              <item name="cl" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -157,12 +155,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="language.cpp" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cl/patterns" />
       <recent name="$PROJECT_DIR$/cl" />
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="$PROJECT_DIR$" />
@@ -184,20 +183,28 @@
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ClusLib" RUN_TARGET_NAME="test_main" EXPLICIT_BUILD_TARGET_NAME="all">
       <envs />
     </configuration>
+    <configuration name="cluslib_clusters" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClusLib" TARGET_NAME="cluslib_clusters" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
     <configuration name="cluslib_dataset" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClusLib" TARGET_NAME="cluslib_dataset" CONFIG_NAME="Debug">
       <envs />
     </configuration>
     <configuration name="cluslib_global" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClusLib" TARGET_NAME="cluslib_global" CONFIG_NAME="Debug">
       <envs />
     </configuration>
+    <configuration name="cluslib_patterns" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClusLib" TARGET_NAME="cluslib_patterns" CONFIG_NAME="Debug">
+      <envs />
+    </configuration>
     <configuration name="dataset_example" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ClusLib" TARGET_NAME="dataset_example" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ClusLib" RUN_TARGET_NAME="dataset_example">
       <envs />
     </configuration>
-    <list size="4">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Build All" />
       <item index="1" class="java.lang.String" itemvalue="Application.cluslib_global" />
-      <item index="2" class="java.lang.String" itemvalue="Application.cluslib_dataset" />
-      <item index="3" class="java.lang.String" itemvalue="Application.dataset_example" />
+      <item index="2" class="java.lang.String" itemvalue="Application.cluslib_clusters" />
+      <item index="3" class="java.lang.String" itemvalue="Application.cluslib_dataset" />
+      <item index="4" class="java.lang.String" itemvalue="Application.cluslib_patterns" />
+      <item index="5" class="java.lang.String" itemvalue="Application.dataset_example" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -217,21 +224,23 @@
       <workItem from="1520673010492" duration="1394000" />
       <workItem from="1520675830548" duration="139000" />
       <workItem from="1520676644064" duration="2170000" />
-      <workItem from="1520680010095" duration="48000" />
+      <workItem from="1520680010095" duration="570000" />
+      <workItem from="1520722009224" duration="592000" />
+      <workItem from="1520722734992" duration="161000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7037000" />
+    <option name="totallyTimeSpent" value="8312000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="837" extended-state="0" />
+    <frame x="0" y="405" width="1440" height="455" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27110156" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32884097" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -261,11 +270,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+    <entry file="file://$PROJECT_DIR$/cl/patterns/joinvaluevisitor.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/datasets/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -287,7 +317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" column="61" lean-forward="false" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -309,7 +338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -324,7 +352,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512">
           <caret line="32" column="18" lean-forward="true" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -353,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="22" column="61" lean-forward="true" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -402,13 +428,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cl/clusters/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="41" column="1" lean-forward="true" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cl/datasets/record.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
@@ -445,18 +464,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/joinvaluevisitor.h" />
+    <entry file="file://$PROJECT_DIR$/cl/clusters/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="327">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cl/datasets/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
+        <state relative-caret-position="248">
           <caret line="45" column="52" lean-forward="false" selection-start-line="45" selection-start-column="52" selection-end-line="45" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="29" column="21" lean-forward="false" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/pcvisitor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/pcvisitor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/joinvaluevisitor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cl/patterns/joinvaluevisitor.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding />
         </state>
       </provider>

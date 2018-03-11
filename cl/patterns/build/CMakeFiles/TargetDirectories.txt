@@ -1,0 +1,7 @@
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/install/local.dir
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/install/strip.dir
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/install.dir
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/list_install_components.dir
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/rebuild_cache.dir
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/edit_cache.dir
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/build/CMakeFiles/cluslib_patterns.dir

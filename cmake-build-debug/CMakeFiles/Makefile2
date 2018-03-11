@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug
 CMakeFiles/cluslib_global.dir/all:
 	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/depend
 	$(MAKE) -f CMakeFiles/cluslib_global.dir/build.make CMakeFiles/cluslib_global.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target cluslib_global"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target cluslib_global"
 .PHONY : CMakeFiles/cluslib_global.dir/all
 
 # Include target in all.
@@ -121,7 +121,7 @@ cl/datasets/preinstall:
 cl/datasets/CMakeFiles/cluslib_dataset.dir/all: CMakeFiles/cluslib_global.dir/all
 	$(MAKE) -f cl/datasets/CMakeFiles/cluslib_dataset.dir/build.make cl/datasets/CMakeFiles/cluslib_dataset.dir/depend
 	$(MAKE) -f cl/datasets/CMakeFiles/cluslib_dataset.dir/build.make cl/datasets/CMakeFiles/cluslib_dataset.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target cluslib_dataset"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Built target cluslib_dataset"
 .PHONY : cl/datasets/CMakeFiles/cluslib_dataset.dir/all
 
 # Include target in all.
@@ -152,6 +152,116 @@ clean: cl/datasets/CMakeFiles/cluslib_dataset.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory cl/patterns
+
+# Convenience name for "all" pass in the directory.
+cl/patterns/all: cl/patterns/CMakeFiles/cluslib_patterns.dir/all
+
+.PHONY : cl/patterns/all
+
+# Convenience name for "clean" pass in the directory.
+cl/patterns/clean: cl/patterns/CMakeFiles/cluslib_patterns.dir/clean
+
+.PHONY : cl/patterns/clean
+
+# Convenience name for "preinstall" pass in the directory.
+cl/patterns/preinstall:
+
+.PHONY : cl/patterns/preinstall
+
+#=============================================================================
+# Target rules for target cl/patterns/CMakeFiles/cluslib_patterns.dir
+
+# All Build rule for target.
+cl/patterns/CMakeFiles/cluslib_patterns.dir/all: CMakeFiles/cluslib_global.dir/all
+	$(MAKE) -f cl/patterns/CMakeFiles/cluslib_patterns.dir/build.make cl/patterns/CMakeFiles/cluslib_patterns.dir/depend
+	$(MAKE) -f cl/patterns/CMakeFiles/cluslib_patterns.dir/build.make cl/patterns/CMakeFiles/cluslib_patterns.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=15,16,17,18,19 "Built target cluslib_patterns"
+.PHONY : cl/patterns/CMakeFiles/cluslib_patterns.dir/all
+
+# Include target in all.
+all: cl/patterns/CMakeFiles/cluslib_patterns.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+cl/patterns/CMakeFiles/cluslib_patterns.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 cl/patterns/CMakeFiles/cluslib_patterns.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 0
+.PHONY : cl/patterns/CMakeFiles/cluslib_patterns.dir/rule
+
+# Convenience name for target.
+cluslib_patterns: cl/patterns/CMakeFiles/cluslib_patterns.dir/rule
+
+.PHONY : cluslib_patterns
+
+# clean rule for target.
+cl/patterns/CMakeFiles/cluslib_patterns.dir/clean:
+	$(MAKE) -f cl/patterns/CMakeFiles/cluslib_patterns.dir/build.make cl/patterns/CMakeFiles/cluslib_patterns.dir/clean
+.PHONY : cl/patterns/CMakeFiles/cluslib_patterns.dir/clean
+
+# clean rule for target.
+clean: cl/patterns/CMakeFiles/cluslib_patterns.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory cl/clusters
+
+# Convenience name for "all" pass in the directory.
+cl/clusters/all: cl/clusters/CMakeFiles/cluslib_clusters.dir/all
+
+.PHONY : cl/clusters/all
+
+# Convenience name for "clean" pass in the directory.
+cl/clusters/clean: cl/clusters/CMakeFiles/cluslib_clusters.dir/clean
+
+.PHONY : cl/clusters/clean
+
+# Convenience name for "preinstall" pass in the directory.
+cl/clusters/preinstall:
+
+.PHONY : cl/clusters/preinstall
+
+#=============================================================================
+# Target rules for target cl/clusters/CMakeFiles/cluslib_clusters.dir
+
+# All Build rule for target.
+cl/clusters/CMakeFiles/cluslib_clusters.dir/all: CMakeFiles/cluslib_global.dir/all
+	$(MAKE) -f cl/clusters/CMakeFiles/cluslib_clusters.dir/build.make cl/clusters/CMakeFiles/cluslib_clusters.dir/depend
+	$(MAKE) -f cl/clusters/CMakeFiles/cluslib_clusters.dir/build.make cl/clusters/CMakeFiles/cluslib_clusters.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target cluslib_clusters"
+.PHONY : cl/clusters/CMakeFiles/cluslib_clusters.dir/all
+
+# Include target in all.
+all: cl/clusters/CMakeFiles/cluslib_clusters.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+cl/clusters/CMakeFiles/cluslib_clusters.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 cl/clusters/CMakeFiles/cluslib_clusters.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles 0
+.PHONY : cl/clusters/CMakeFiles/cluslib_clusters.dir/rule
+
+# Convenience name for target.
+cluslib_clusters: cl/clusters/CMakeFiles/cluslib_clusters.dir/rule
+
+.PHONY : cluslib_clusters
+
+# clean rule for target.
+cl/clusters/CMakeFiles/cluslib_clusters.dir/clean:
+	$(MAKE) -f cl/clusters/CMakeFiles/cluslib_clusters.dir/build.make cl/clusters/CMakeFiles/cluslib_clusters.dir/clean
+.PHONY : cl/clusters/CMakeFiles/cluslib_clusters.dir/clean
+
+# clean rule for target.
+clean: cl/clusters/CMakeFiles/cluslib_clusters.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory examples
 
 # Convenience name for "all" pass in the directory.
@@ -177,7 +287,7 @@ examples/CMakeFiles/dataset_example.dir/all: CMakeFiles/cluslib_global.dir/all
 examples/CMakeFiles/dataset_example.dir/all: cl/datasets/CMakeFiles/cluslib_dataset.dir/all
 	$(MAKE) -f examples/CMakeFiles/dataset_example.dir/build.make examples/CMakeFiles/dataset_example.dir/depend
 	$(MAKE) -f examples/CMakeFiles/dataset_example.dir/build.make examples/CMakeFiles/dataset_example.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target dataset_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/CMakeFiles --progress-num=20,21 "Built target dataset_example"
 .PHONY : examples/CMakeFiles/dataset_example.dir/all
 
 # Include target in all.

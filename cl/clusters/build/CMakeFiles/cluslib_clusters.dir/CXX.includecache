@@ -25,8 +25,14 @@ vector
 -
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.cpp
-hclustering.hpp
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp
+cl/clusters/hclustering.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/clusters/hclustering.hpp
+cl/errors.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/errors.hpp
+cl/patterns/joinvaluevisitor.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/patterns/joinvaluevisitor.hpp
+cl/patterns/pcvisitor.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cl/patterns/pcvisitor.hpp
 
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp
 cl/clusters/pclustering.hpp
@@ -76,6 +82,20 @@ cl/patterns/node.hpp
 cl/utilities/container.h
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/utilities/container.h
 
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/joinvaluevisitor.hpp
+cl/patterns/internalnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/internalnode.hpp
+cl/patterns/leafnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/leafnode.hpp
+cl/patterns/nodevisitor.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/nodevisitor.hpp
+cl/utilities/nnmap.h
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/utilities/nnmap.h
+iostream
+-
+set
+-
+
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.hpp
 cl/datasets/record.hpp
 /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/datasets/record.hpp
@@ -98,23 +118,17 @@ boost/shared_ptr.hpp
 cl/types.h
 -
 
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/pcvisitor.hpp
+cl/clusters/pclustering.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/clusters/pclustering.hpp
+cl/patterns/internalnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/internalnode.hpp
+cl/patterns/leafnode.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/leafnode.hpp
+cl/patterns/nodevisitor.hpp
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/patterns/nodevisitor.hpp
 cl/types.h
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/cl/types.h
-sstream
--
-string
--
-
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/nnmap.h
-cl/errors.hpp
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/cl/errors.hpp
-cl/types.h
-/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/cl/types.h
-algorithm
--
-map
--
+/Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/cl/types.h
 
 /usr/local/include/ClusLib/cl/cldefines.h
 boost/config.hpp
@@ -214,6 +228,24 @@ cl/types.h
 cl/errors.h
 /usr/local/include/ClusLib/cl/utilities/cl/errors.h
 vector
+-
+
+/usr/local/include/ClusLib/cl/utilities/dendrogram.hpp
+cl/types.h
+/usr/local/include/ClusLib/cl/utilities/cl/types.h
+sstream
+-
+string
+-
+
+/usr/local/include/ClusLib/cl/utilities/nnmap.h
+cl/errors.hpp
+/usr/local/include/ClusLib/cl/utilities/cl/errors.hpp
+cl/types.h
+/usr/local/include/ClusLib/cl/utilities/cl/types.h
+algorithm
+-
+map
 -
 
 /usr/local/include/ClusLib/cl/utilities/null.h

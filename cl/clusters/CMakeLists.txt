@@ -26,6 +26,7 @@ file(GLOB cl_clusters_headers
         hclustering.hpp
         pclustering.hpp
         subspacecluster.hpp
+        cluster.h
 )
 
 file(GLOB cl_clusters_sources
@@ -36,7 +37,7 @@ file(GLOB cl_clusters_sources
 )
 
 add_library(cluslib_clusters SHARED ${cl_clusters_headers} ${cl_clusters_sources})
-target_link_libraries(cluslib_clusters cluslib_global)
+target_link_libraries(cluslib_clusters cluslib_global cluslib_dataset)
 
 # Install library
 install(TARGETS cluslib_clusters DESTINATION lib/${PROJECT_NAME})

@@ -211,10 +211,16 @@ ClusLib_SOURCE_DIR:STATIC=/Users/zw/code/C_and_C++_Projects/ClusLib/examples
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl
 
 //Dependencies for the target
+cluslib_clusters_LIB_DEPENDS:STATIC=general;cluslib_global;
+
+//Dependencies for the target
 cluslib_dataset_LIB_DEPENDS:STATIC=general;cluslib_global;
 
 //Dependencies for target
 cluslib_global_LIB_DEPENDS:STATIC=
+
+//Dependencies for the target
+cluslib_patterns_LIB_DEPENDS:STATIC=general;cluslib_global;
 
 
 ########################
@@ -323,7 +329,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

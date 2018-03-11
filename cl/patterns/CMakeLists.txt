@@ -21,25 +21,29 @@ include_directories("/Users/zw/code/C_and_C++_Projects/ClusLib")
 
 link_directories("/usr/local/lib/ClusLib/")
 
-file(GLOB cl_clusters_headers
-    centercluster.hpp
-        hclustering.hpp
-        pclustering.hpp
-        subspacecluster.hpp
+file(GLOB cl_patterns_headers
+    internalnode.hpp
+        leafnode.hpp
+        node.hpp
+        nodevisitor.hpp
+        joinvaluevisitor.hpp
+        pcvisitor.hpp
+        dendrogramvisitor.hpp
 )
 
-file(GLOB cl_clusters_sources
-    centercluster.cpp
-        hclustering.cpp
-        pclustering.cpp
-        subspacecluster.cpp
+file(GLOB cl_patterns_sources
+    leafnode.cpp
+        internalnode.cpp
+        pcvisitor.cpp
+        joinvaluevisitor.cpp
+        dendrogramvisitor.cpp
 )
 
-add_library(cluslib_clusters SHARED ${cl_clusters_headers} ${cl_clusters_sources})
-target_link_libraries(cluslib_clusters cluslib_global)
+add_library(cluslib_patterns SHARED ${cl_patterns_headers} ${cl_patterns_sources})
+target_link_libraries(cluslib_patterns cluslib_global cluslib_dataset cluslib_utilities)
 
 # Install library
-install(TARGETS cluslib_clusters DESTINATION lib/${PROJECT_NAME})
+install(TARGETS cluslib_patterns DESTINATION lib/${PROJECT_NAME})
 
 # Install library headers
-install(FILES ${cl_clusters_headers} DESTINATION include/${PROJECT_NAME}/cl/clusters)
+install(FILES ${cl_patterns_headers} DESTINATION include/${PROJECT_NAME}/cl/patterns)

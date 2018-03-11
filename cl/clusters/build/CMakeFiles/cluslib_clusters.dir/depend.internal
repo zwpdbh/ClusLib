@@ -739,11 +739,11 @@ CMakeFiles/cluslib_clusters.dir/hclustering.cpp.o
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/hclustering.hpp
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/internalnode.hpp
+ /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/joinvaluevisitor.hpp
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/leafnode.hpp
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/node.hpp
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/nodevisitor.hpp
- /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.hpp
- /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/nnmap.h
+ /Users/zw/code/C_and_C++_Projects/ClusLib/cl/patterns/pcvisitor.hpp
  /usr/local/include/ClusLib/cl/cldefines.h
  /usr/local/include/ClusLib/cl/datasets/attrinfo.hpp
  /usr/local/include/ClusLib/cl/datasets/attrvalue.h
@@ -754,6 +754,8 @@ CMakeFiles/cluslib_clusters.dir/hclustering.cpp.o
  /usr/local/include/ClusLib/cl/errors.hpp
  /usr/local/include/ClusLib/cl/types.h
  /usr/local/include/ClusLib/cl/utilities/container.h
+ /usr/local/include/ClusLib/cl/utilities/dendrogram.hpp
+ /usr/local/include/ClusLib/cl/utilities/nnmap.h
  /usr/local/include/ClusLib/cl/utilities/null.h
  /usr/local/include/boost/aligned_storage.hpp
  /usr/local/include/boost/assert.hpp
@@ -1476,7 +1478,6 @@ CMakeFiles/cluslib_clusters.dir/pclustering.cpp.o
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/cluster.h
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.cpp
  /Users/zw/code/C_and_C++_Projects/ClusLib/cl/clusters/pclustering.hpp
- /Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/nnmap.h
  /usr/local/include/ClusLib/cl/cldefines.h
  /usr/local/include/ClusLib/cl/datasets/attrinfo.hpp
  /usr/local/include/ClusLib/cl/datasets/attrvalue.h
@@ -1487,6 +1488,7 @@ CMakeFiles/cluslib_clusters.dir/pclustering.cpp.o
  /usr/local/include/ClusLib/cl/errors.hpp
  /usr/local/include/ClusLib/cl/types.h
  /usr/local/include/ClusLib/cl/utilities/container.h
+ /usr/local/include/ClusLib/cl/utilities/nnmap.h
  /usr/local/include/ClusLib/cl/utilities/null.h
  /usr/local/include/boost/aligned_storage.hpp
  /usr/local/include/boost/assert.hpp

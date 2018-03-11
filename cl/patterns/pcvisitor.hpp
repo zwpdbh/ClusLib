@@ -5,12 +5,39 @@
 #ifndef CLUSLIB_PCVISITOR_HPP
 #define CLUSLIB_PCVISITOR_HPP
 
+#include "cl/clusters/pclustering.hpp"
+#include "cl/patterns/internalnode.hpp"
+#include "cl/patterns/leafnode.hpp"
+#include "cl/patterns/nodevisitor.hpp"
+#include "cl/types.h"
 
+namespace ClusLib {
+class CVisitor : public NodeVisitor {
+  public:
+    CVisitor();
+    void                       visit(LeafNode& node);
+    void                       visit(InternalNode& node);
+    boost::shared_ptr<Cluster> get_cluster();
 
-class pcvisitor {
-
+  private:
+    boost::shared_ptr<Cluster> _cluster;
 };
 
+class PCVisitor : public NodeVisitor {
+  public:
+    PCVisitor(PClustering& pc, Size cutLevel);
+    void visit(LeafNode& node);
+    void visit(InternalNode& node);
 
+  private:
+    PClustering& _pc;
+    Size         _cutLevel;
+};
 
-#endif //CLUSLIB_PCVISITOR_HPP
+inline boost::shared_ptr<Cluster> CVisitor::get_cluster() {
+    return _cluster;
+}
+
+} // namespace ClusLib
+
+#endif // CLUSLIB_PCVISITOR_HPP

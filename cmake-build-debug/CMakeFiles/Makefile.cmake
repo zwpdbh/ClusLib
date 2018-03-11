@@ -29,7 +29,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
   "/Users/zw/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/173.4548.31/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
+  "../cl/clusters/CMakeLists.txt"
   "../cl/datasets/CMakeLists.txt"
+  "../cl/patterns/CMakeLists.txt"
   "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.9.6/CMakeSystem.cmake"
@@ -46,6 +48,8 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "cl/datasets/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "cl/patterns/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "cl/clusters/CMakeFiles/CMakeDirectoryInformation.cmake"
   "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -53,5 +57,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/cluslib_global.dir/DependInfo.cmake"
   "cl/datasets/CMakeFiles/cluslib_dataset.dir/DependInfo.cmake"
+  "cl/patterns/CMakeFiles/cluslib_patterns.dir/DependInfo.cmake"
+  "cl/clusters/CMakeFiles/cluslib_clusters.dir/DependInfo.cmake"
   "examples/CMakeFiles/dataset_example.dir/DependInfo.cmake"
   )

@@ -6,4 +6,7 @@
 //  Copyright © 2018 Otago. All rights reserved.
 //
 
-#include "hclustering.hpp"
+#include "cl/clusters/hclustering.hpp"
+#include "cl/errors.hpp"
+#include "cl/patterns/joinvaluevisitor.hpp"
+#include "cl/patterns/pcvisitor.hpp"

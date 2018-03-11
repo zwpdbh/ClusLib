@@ -48,6 +48,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/datasets/cmake_install.cmake")
+  include("/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/patterns/cmake_install.cmake")
+  include("/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/cl/clusters/cmake_install.cmake")
   include("/Users/zw/code/C_and_C++_Projects/ClusLib/cmake-build-debug/examples/cmake_install.cmake")
 
 endif()
