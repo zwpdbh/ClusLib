@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/distances/build",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_distances_EXPORTS -I/usr/local/include -I/usr/local/include/ClusLib -I/Users/zw/code/C_and_C++_Projects/ClusLib   -std=c++11 -fPIC   -Wno-c++11-extensions -o CMakeFiles/cluslib_distances.dir/minkowskidistance.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distances/minkowskidistance.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/distances/minkowskidistance.cpp"
+},
+{
+  "directory": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/distances/build",
+  "command": "/usr/local/opt/llvm/bin/clang++  -Dcluslib_distances_EXPORTS -I/usr/local/include -I/usr/local/include/ClusLib -I/Users/zw/code/C_and_C++_Projects/ClusLib   -std=c++11 -fPIC   -Wno-c++11-extensions -o CMakeFiles/cluslib_distances.dir/euclideandistance.cpp.o -c /Users/zw/code/C_and_C++_Projects/ClusLib/cl/distances/euclideandistance.cpp",
+  "file": "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/distances/euclideandistance.cpp"
+}
+]

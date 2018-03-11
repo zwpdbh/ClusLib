@@ -1,4 +1,4 @@
-#ifdef CLUSLIB_DISTANCE_HPP
+#ifndef CLUSLIB_DISTANCE_HPP
 #define CLUSLIB_DISTANCE_HPP
 
 #include "cl/datasets/record.hpp"
@@ -20,7 +20,8 @@ class Distance : std::binary_function<boost::shared_ptr<Record>,
     virtual Real       operator()(const boost::shared_ptr<Record>&,
                             const boost::shared_ptr<Record>&) const = 0;
 
-    protect : std::string _name;
+  protected:
+    std::string _name;
 };
 
 inline Distance::Distance(const std::string& name) : _name(name) {}

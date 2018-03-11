@@ -6,15 +6,234 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DB0A5C622055086500DFF864 /* attrinfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648572055070A00A9B018 /* attrinfo.hpp */; };
+		DB0A5C632055086500DFF864 /* attrvalue.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648502055070A00A9B018 /* attrvalue.h */; };
+		DB0A5C642055086500DFF864 /* cattrinfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648562055070A00A9B018 /* cattrinfo.hpp */; };
+		DB0A5C652055086500DFF864 /* dataset.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6484C2055070A00A9B018 /* dataset.hpp */; };
+		DB0A5C662055086500DFF864 /* dattrinfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6484D2055070A00A9B018 /* dattrinfo.hpp */; };
+		DB0A5C672055086500DFF864 /* record.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6484F2055070A00A9B018 /* record.hpp */; };
+		DB0A5C682055086500DFF864 /* schema.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648582055070A00A9B018 /* schema.hpp */; };
+		DB0A5C692055087400DFF864 /* attrinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC6484E2055070A00A9B018 /* attrinfo.cpp */; };
+		DB0A5C6A2055087400DFF864 /* cattrinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648552055070A00A9B018 /* cattrinfo.cpp */; };
+		DB0A5C6B2055087400DFF864 /* dataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648522055070A00A9B018 /* dataset.cpp */; };
+		DB0A5C6C2055087400DFF864 /* dattrinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648532055070A00A9B018 /* dattrinfo.cpp */; };
+		DB0A5C6D2055087400DFF864 /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648512055070A00A9B018 /* record.cpp */; };
+		DB0A5C6E2055087400DFF864 /* schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648542055070A00A9B018 /* schema.cpp */; };
+		DB0A5C772055091000DFF864 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
+		DB0A5C782055091B00DFF864 /* container.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648722055073800A9B018 /* container.h */; };
+		DB0A5C792055091B00DFF864 /* dendrogram.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648742055073800A9B018 /* dendrogram.hpp */; };
+		DB0A5C7A2055091B00DFF864 /* nnmap.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648702055073800A9B018 /* nnmap.h */; };
+		DB0A5C7B2055091B00DFF864 /* null.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648712055073800A9B018 /* null.h */; };
+		DB0A5C7C2055092400DFF864 /* dendrogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648732055073800A9B018 /* dendrogram.cpp */; };
+		DB0A5C852055095400DFF864 /* libcluslib_datasets.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64846205506CD00A9B018 /* libcluslib_datasets.dylib */; };
+		DB0A5C862055095400DFF864 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
+		DB0A5C872055096100DFF864 /* centercluster.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648992055076700A9B018 /* centercluster.hpp */; };
+		DB0A5C882055096100DFF864 /* cluster.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648942055076700A9B018 /* cluster.h */; };
+		DB0A5C892055096100DFF864 /* hclustering.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648962055076700A9B018 /* hclustering.hpp */; };
+		DB0A5C8A2055096100DFF864 /* pclustering.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6489A2055076700A9B018 /* pclustering.hpp */; };
+		DB0A5C8B2055096100DFF864 /* subspacecluster.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648952055076700A9B018 /* subspacecluster.hpp */; };
+		DB0A5C8C2055096C00DFF864 /* centercluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648972055076700A9B018 /* centercluster.cpp */; };
+		DB0A5C8D2055096C00DFF864 /* hclustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648982055076700A9B018 /* hclustering.cpp */; };
+		DB0A5C8E2055096C00DFF864 /* pclustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648922055076700A9B018 /* pclustering.cpp */; };
+		DB0A5C8F2055096C00DFF864 /* subspacecluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648932055076700A9B018 /* subspacecluster.cpp */; };
+		DB0A5C98205509D100DFF864 /* dendrogramvisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6487B2055074E00A9B018 /* dendrogramvisitor.hpp */; };
+		DB0A5C99205509D100DFF864 /* internalnode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648832055074F00A9B018 /* internalnode.hpp */; };
+		DB0A5C9A205509D100DFF864 /* joinvaluevisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6487C2055074F00A9B018 /* joinvaluevisitor.hpp */; };
+		DB0A5C9B205509D100DFF864 /* leafnode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648812055074F00A9B018 /* leafnode.hpp */; };
+		DB0A5C9C205509D100DFF864 /* node.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648822055074F00A9B018 /* node.hpp */; };
+		DB0A5C9D205509D100DFF864 /* nodevisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6487D2055074F00A9B018 /* nodevisitor.hpp */; };
+		DB0A5C9E205509D100DFF864 /* pcvisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648852055074F00A9B018 /* pcvisitor.hpp */; };
+		DB0A5C9F205509DC00DFF864 /* centercluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648972055076700A9B018 /* centercluster.cpp */; };
+		DB0A5CA0205509DC00DFF864 /* hclustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648982055076700A9B018 /* hclustering.cpp */; };
+		DB0A5CA1205509DC00DFF864 /* pclustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648922055076700A9B018 /* pclustering.cpp */; };
+		DB0A5CA2205509DC00DFF864 /* subspacecluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648932055076700A9B018 /* subspacecluster.cpp */; };
+		DB0A5CA4205509FC00DFF864 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
+		DB0A5CB420550AAF00DFF864 /* distance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB0A5CAF20550AAF00DFF864 /* distance.hpp */; };
+		DB0A5CB520550AAF00DFF864 /* euclideandistance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB0A5CB020550AAF00DFF864 /* euclideandistance.hpp */; };
+		DB0A5CB620550AAF00DFF864 /* euclideandistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB0A5CB120550AAF00DFF864 /* euclideandistance.cpp */; };
+		DB0A5CB820550AC100DFF864 /* distance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB0A5CAF20550AAF00DFF864 /* distance.hpp */; };
+		DB0A5CB920550AC100DFF864 /* euclideandistance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB0A5CB020550AAF00DFF864 /* euclideandistance.hpp */; };
+		DB0A5CBB20550ACD00DFF864 /* euclideandistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB0A5CB120550AAF00DFF864 /* euclideandistance.cpp */; };
+		DB0A5CBD20550AD400DFF864 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
+		DB0A5CC420550C6100DFF864 /* minkowskidistance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB0A5CC220550C6100DFF864 /* minkowskidistance.hpp */; };
+		DB0A5CC520550C6100DFF864 /* minkowskidistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB0A5CC320550C6100DFF864 /* minkowskidistance.cpp */; };
+		DBC6483E2055062500A9B018 /* errors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC64838205505D700A9B018 /* errors.cpp */; };
+		DBC6483F2055062C00A9B018 /* cldefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC64836205505D600A9B018 /* cldefines.h */; };
+		DBC648402055062C00A9B018 /* errors.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC64837205505D600A9B018 /* errors.hpp */; };
+		DBC648412055062C00A9B018 /* types.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC64839205505D700A9B018 /* types.h */; };
+		DBC6484B205506F200A9B018 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
+		DBC648592055070A00A9B018 /* dataset.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6484C2055070A00A9B018 /* dataset.hpp */; };
+		DBC6485A2055070A00A9B018 /* dattrinfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6484D2055070A00A9B018 /* dattrinfo.hpp */; };
+		DBC6485B2055070A00A9B018 /* attrinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC6484E2055070A00A9B018 /* attrinfo.cpp */; };
+		DBC6485C2055070A00A9B018 /* record.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6484F2055070A00A9B018 /* record.hpp */; };
+		DBC6485D2055070A00A9B018 /* attrvalue.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648502055070A00A9B018 /* attrvalue.h */; };
+		DBC6485E2055070A00A9B018 /* record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648512055070A00A9B018 /* record.cpp */; };
+		DBC6485F2055070A00A9B018 /* dataset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648522055070A00A9B018 /* dataset.cpp */; };
+		DBC648602055070A00A9B018 /* dattrinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648532055070A00A9B018 /* dattrinfo.cpp */; };
+		DBC648612055070A00A9B018 /* schema.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648542055070A00A9B018 /* schema.cpp */; };
+		DBC648622055070A00A9B018 /* cattrinfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648552055070A00A9B018 /* cattrinfo.cpp */; };
+		DBC648632055070A00A9B018 /* cattrinfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648562055070A00A9B018 /* cattrinfo.hpp */; };
+		DBC648642055070A00A9B018 /* attrinfo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648572055070A00A9B018 /* attrinfo.hpp */; };
+		DBC648652055070A00A9B018 /* schema.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648582055070A00A9B018 /* schema.hpp */; };
+		DBC648752055073800A9B018 /* nnmap.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648702055073800A9B018 /* nnmap.h */; };
+		DBC648762055073800A9B018 /* null.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648712055073800A9B018 /* null.h */; };
+		DBC648772055073800A9B018 /* container.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648722055073800A9B018 /* container.h */; };
+		DBC648782055073800A9B018 /* dendrogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648732055073800A9B018 /* dendrogram.cpp */; };
+		DBC648792055073800A9B018 /* dendrogram.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648742055073800A9B018 /* dendrogram.hpp */; };
+		DBC648862055074F00A9B018 /* dendrogramvisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC6487A2055074E00A9B018 /* dendrogramvisitor.cpp */; };
+		DBC648872055074F00A9B018 /* dendrogramvisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6487B2055074E00A9B018 /* dendrogramvisitor.hpp */; };
+		DBC648882055074F00A9B018 /* joinvaluevisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6487C2055074F00A9B018 /* joinvaluevisitor.hpp */; };
+		DBC648892055074F00A9B018 /* nodevisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6487D2055074F00A9B018 /* nodevisitor.hpp */; };
+		DBC6488A2055074F00A9B018 /* pcvisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC6487E2055074F00A9B018 /* pcvisitor.cpp */; };
+		DBC6488B2055074F00A9B018 /* leafnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC6487F2055074F00A9B018 /* leafnode.cpp */; };
+		DBC6488C2055074F00A9B018 /* internalnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648802055074F00A9B018 /* internalnode.cpp */; };
+		DBC6488D2055074F00A9B018 /* leafnode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648812055074F00A9B018 /* leafnode.hpp */; };
+		DBC6488E2055074F00A9B018 /* node.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648822055074F00A9B018 /* node.hpp */; };
+		DBC6488F2055074F00A9B018 /* internalnode.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648832055074F00A9B018 /* internalnode.hpp */; };
+		DBC648902055074F00A9B018 /* joinvaluevisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648842055074F00A9B018 /* joinvaluevisitor.cpp */; };
+		DBC648912055074F00A9B018 /* pcvisitor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648852055074F00A9B018 /* pcvisitor.hpp */; };
+		DBC6489B2055076700A9B018 /* pclustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648922055076700A9B018 /* pclustering.cpp */; };
+		DBC6489C2055076700A9B018 /* subspacecluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648932055076700A9B018 /* subspacecluster.cpp */; };
+		DBC6489D2055076700A9B018 /* cluster.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC648942055076700A9B018 /* cluster.h */; };
+		DBC6489E2055076700A9B018 /* subspacecluster.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648952055076700A9B018 /* subspacecluster.hpp */; };
+		DBC6489F2055076700A9B018 /* hclustering.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648962055076700A9B018 /* hclustering.hpp */; };
+		DBC648A02055076700A9B018 /* centercluster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648972055076700A9B018 /* centercluster.cpp */; };
+		DBC648A12055076700A9B018 /* hclustering.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648982055076700A9B018 /* hclustering.cpp */; };
+		DBC648A22055076700A9B018 /* centercluster.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC648992055076700A9B018 /* centercluster.hpp */; };
+		DBC648A32055076700A9B018 /* pclustering.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC6489A2055076700A9B018 /* pclustering.hpp */; };
+		DBC648A52055078800A9B018 /* dataset_example_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648A42055078800A9B018 /* dataset_example_main.cpp */; };
+		DBC648B1205507D700A9B018 /* dataset_example_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC648A42055078800A9B018 /* dataset_example_main.cpp */; };
+		DBC648B2205507E400A9B018 /* libcluslib_datasets.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64846205506CD00A9B018 /* libcluslib_datasets.dylib */; };
+		DBC648B3205507E400A9B018 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBC648A8205507A300A9B018 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DBC6481F2055054500A9B018 /* libClusLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libClusLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0A5C73205508FD00DFF864 /* libcluslib_utilities.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_utilities.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0A5C812055094400DFF864 /* libcluslib_clusters.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_clusters.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0A5C94205509A000DFF864 /* libcluslib_patterns.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_patterns.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0A5CA920550A6100DFF864 /* libcluslib_distances.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_distances.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB0A5CAF20550AAF00DFF864 /* distance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = distance.hpp; path = ../../../../cl/distances/distance.hpp; sourceTree = "<group>"; };
+		DB0A5CB020550AAF00DFF864 /* euclideandistance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = euclideandistance.hpp; path = ../../../../cl/distances/euclideandistance.hpp; sourceTree = "<group>"; };
+		DB0A5CB120550AAF00DFF864 /* euclideandistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = euclideandistance.cpp; path = ../../../../cl/distances/euclideandistance.cpp; sourceTree = "<group>"; };
+		DB0A5CC220550C6100DFF864 /* minkowskidistance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = minkowskidistance.hpp; path = ../../../../cl/distances/minkowskidistance.hpp; sourceTree = "<group>"; };
+		DB0A5CC320550C6100DFF864 /* minkowskidistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minkowskidistance.cpp; path = ../../../../cl/distances/minkowskidistance.cpp; sourceTree = "<group>"; };
+		DBC64832205505C000A9B018 /* libcluslib_global.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_global.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC64836205505D600A9B018 /* cldefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cldefines.h; path = ../../../cl/cldefines.h; sourceTree = "<group>"; };
+		DBC64837205505D600A9B018 /* errors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = errors.hpp; path = ../../../cl/errors.hpp; sourceTree = "<group>"; };
+		DBC64838205505D700A9B018 /* errors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = errors.cpp; path = ../../../cl/errors.cpp; sourceTree = "<group>"; };
+		DBC64839205505D700A9B018 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = ../../../cl/types.h; sourceTree = "<group>"; };
+		DBC64846205506CD00A9B018 /* libcluslib_datasets.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_datasets.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC6484C2055070A00A9B018 /* dataset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dataset.hpp; path = ../../../../cl/datasets/dataset.hpp; sourceTree = "<group>"; };
+		DBC6484D2055070A00A9B018 /* dattrinfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dattrinfo.hpp; path = ../../../../cl/datasets/dattrinfo.hpp; sourceTree = "<group>"; };
+		DBC6484E2055070A00A9B018 /* attrinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = attrinfo.cpp; path = ../../../../cl/datasets/attrinfo.cpp; sourceTree = "<group>"; };
+		DBC6484F2055070A00A9B018 /* record.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = record.hpp; path = ../../../../cl/datasets/record.hpp; sourceTree = "<group>"; };
+		DBC648502055070A00A9B018 /* attrvalue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = attrvalue.h; path = ../../../../cl/datasets/attrvalue.h; sourceTree = "<group>"; };
+		DBC648512055070A00A9B018 /* record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = record.cpp; path = ../../../../cl/datasets/record.cpp; sourceTree = "<group>"; };
+		DBC648522055070A00A9B018 /* dataset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dataset.cpp; path = ../../../../cl/datasets/dataset.cpp; sourceTree = "<group>"; };
+		DBC648532055070A00A9B018 /* dattrinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dattrinfo.cpp; path = ../../../../cl/datasets/dattrinfo.cpp; sourceTree = "<group>"; };
+		DBC648542055070A00A9B018 /* schema.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = schema.cpp; path = ../../../../cl/datasets/schema.cpp; sourceTree = "<group>"; };
+		DBC648552055070A00A9B018 /* cattrinfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cattrinfo.cpp; path = ../../../../cl/datasets/cattrinfo.cpp; sourceTree = "<group>"; };
+		DBC648562055070A00A9B018 /* cattrinfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cattrinfo.hpp; path = ../../../../cl/datasets/cattrinfo.hpp; sourceTree = "<group>"; };
+		DBC648572055070A00A9B018 /* attrinfo.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = attrinfo.hpp; path = ../../../../cl/datasets/attrinfo.hpp; sourceTree = "<group>"; };
+		DBC648582055070A00A9B018 /* schema.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = schema.hpp; path = ../../../../cl/datasets/schema.hpp; sourceTree = "<group>"; };
+		DBC648702055073800A9B018 /* nnmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nnmap.h; path = ../../../../cl/utilities/nnmap.h; sourceTree = "<group>"; };
+		DBC648712055073800A9B018 /* null.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = null.h; path = ../../../../cl/utilities/null.h; sourceTree = "<group>"; };
+		DBC648722055073800A9B018 /* container.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = container.h; path = ../../../../cl/utilities/container.h; sourceTree = "<group>"; };
+		DBC648732055073800A9B018 /* dendrogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dendrogram.cpp; path = ../../../../cl/utilities/dendrogram.cpp; sourceTree = "<group>"; };
+		DBC648742055073800A9B018 /* dendrogram.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dendrogram.hpp; path = ../../../../cl/utilities/dendrogram.hpp; sourceTree = "<group>"; };
+		DBC6487A2055074E00A9B018 /* dendrogramvisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dendrogramvisitor.cpp; path = ../../../../cl/patterns/dendrogramvisitor.cpp; sourceTree = "<group>"; };
+		DBC6487B2055074E00A9B018 /* dendrogramvisitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = dendrogramvisitor.hpp; path = ../../../../cl/patterns/dendrogramvisitor.hpp; sourceTree = "<group>"; };
+		DBC6487C2055074F00A9B018 /* joinvaluevisitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = joinvaluevisitor.hpp; path = ../../../../cl/patterns/joinvaluevisitor.hpp; sourceTree = "<group>"; };
+		DBC6487D2055074F00A9B018 /* nodevisitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = nodevisitor.hpp; path = ../../../../cl/patterns/nodevisitor.hpp; sourceTree = "<group>"; };
+		DBC6487E2055074F00A9B018 /* pcvisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pcvisitor.cpp; path = ../../../../cl/patterns/pcvisitor.cpp; sourceTree = "<group>"; };
+		DBC6487F2055074F00A9B018 /* leafnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = leafnode.cpp; path = ../../../../cl/patterns/leafnode.cpp; sourceTree = "<group>"; };
+		DBC648802055074F00A9B018 /* internalnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = internalnode.cpp; path = ../../../../cl/patterns/internalnode.cpp; sourceTree = "<group>"; };
+		DBC648812055074F00A9B018 /* leafnode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = leafnode.hpp; path = ../../../../cl/patterns/leafnode.hpp; sourceTree = "<group>"; };
+		DBC648822055074F00A9B018 /* node.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = node.hpp; path = ../../../../cl/patterns/node.hpp; sourceTree = "<group>"; };
+		DBC648832055074F00A9B018 /* internalnode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = internalnode.hpp; path = ../../../../cl/patterns/internalnode.hpp; sourceTree = "<group>"; };
+		DBC648842055074F00A9B018 /* joinvaluevisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = joinvaluevisitor.cpp; path = ../../../../cl/patterns/joinvaluevisitor.cpp; sourceTree = "<group>"; };
+		DBC648852055074F00A9B018 /* pcvisitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pcvisitor.hpp; path = ../../../../cl/patterns/pcvisitor.hpp; sourceTree = "<group>"; };
+		DBC648922055076700A9B018 /* pclustering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pclustering.cpp; path = ../../../../cl/clusters/pclustering.cpp; sourceTree = "<group>"; };
+		DBC648932055076700A9B018 /* subspacecluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = subspacecluster.cpp; path = ../../../../cl/clusters/subspacecluster.cpp; sourceTree = "<group>"; };
+		DBC648942055076700A9B018 /* cluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cluster.h; path = ../../../../cl/clusters/cluster.h; sourceTree = "<group>"; };
+		DBC648952055076700A9B018 /* subspacecluster.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = subspacecluster.hpp; path = ../../../../cl/clusters/subspacecluster.hpp; sourceTree = "<group>"; };
+		DBC648962055076700A9B018 /* hclustering.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = hclustering.hpp; path = ../../../../cl/clusters/hclustering.hpp; sourceTree = "<group>"; };
+		DBC648972055076700A9B018 /* centercluster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = centercluster.cpp; path = ../../../../cl/clusters/centercluster.cpp; sourceTree = "<group>"; };
+		DBC648982055076700A9B018 /* hclustering.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = hclustering.cpp; path = ../../../../cl/clusters/hclustering.cpp; sourceTree = "<group>"; };
+		DBC648992055076700A9B018 /* centercluster.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = centercluster.hpp; path = ../../../../cl/clusters/centercluster.hpp; sourceTree = "<group>"; };
+		DBC6489A2055076700A9B018 /* pclustering.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = pclustering.hpp; path = ../../../../cl/clusters/pclustering.hpp; sourceTree = "<group>"; };
+		DBC648A42055078800A9B018 /* dataset_example_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dataset_example_main.cpp; path = ../../../examples/dataset_example_main.cpp; sourceTree = "<group>"; };
+		DBC648AA205507A300A9B018 /* dataset_example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dataset_example; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DBC6481C2055054500A9B018 /* Frameworks */ = {
+		DB0A5C70205508FD00DFF864 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0A5C772055091000DFF864 /* libcluslib_global.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5C7E2055094400DFF864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C852055095400DFF864 /* libcluslib_datasets.dylib in Frameworks */,
+				DB0A5C862055095400DFF864 /* libcluslib_global.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5C91205509A000DFF864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5CA4205509FC00DFF864 /* libcluslib_global.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5CA620550A6100DFF864 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5CBD20550AD400DFF864 /* libcluslib_global.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC6482F205505C000A9B018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC64843205506CD00A9B018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC6484B205506F200A9B018 /* libcluslib_global.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC648A7205507A300A9B018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC648B2205507E400A9B018 /* libcluslib_datasets.dylib in Frameworks */,
+				DBC648B3205507E400A9B018 /* libcluslib_global.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -24,47 +243,357 @@
 		DBC648162055054500A9B018 = {
 			isa = PBXGroup;
 			children = (
+				DBC6482C2055058E00A9B018 /* examples */,
+				DBC648262055055100A9B018 /* cl */,
 				DBC648202055054500A9B018 /* Products */,
+				DBC6484A205506F200A9B018 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		DBC648202055054500A9B018 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBC6481F2055054500A9B018 /* libClusLib.dylib */,
+				DBC64832205505C000A9B018 /* libcluslib_global.dylib */,
+				DBC64846205506CD00A9B018 /* libcluslib_datasets.dylib */,
+				DBC648AA205507A300A9B018 /* dataset_example */,
+				DB0A5C73205508FD00DFF864 /* libcluslib_utilities.dylib */,
+				DB0A5C812055094400DFF864 /* libcluslib_clusters.dylib */,
+				DB0A5C94205509A000DFF864 /* libcluslib_patterns.dylib */,
+				DB0A5CA920550A6100DFF864 /* libcluslib_distances.dylib */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC648262055055100A9B018 /* cl */ = {
+			isa = PBXGroup;
+			children = (
+				DBC64836205505D600A9B018 /* cldefines.h */,
+				DBC64838205505D700A9B018 /* errors.cpp */,
+				DBC64837205505D600A9B018 /* errors.hpp */,
+				DBC64839205505D700A9B018 /* types.h */,
+				DBC6482D2055059D00A9B018 /* distances */,
+				DBC6482B2055057A00A9B018 /* datasets */,
+				DBC6482A2055056F00A9B018 /* utilities */,
+				DBC648292055056900A9B018 /* patterns */,
+				DBC648282055056200A9B018 /* clusters */,
+			);
+			path = cl;
+			sourceTree = "<group>";
+		};
+		DBC648282055056200A9B018 /* clusters */ = {
+			isa = PBXGroup;
+			children = (
+				DBC648972055076700A9B018 /* centercluster.cpp */,
+				DBC648992055076700A9B018 /* centercluster.hpp */,
+				DBC648942055076700A9B018 /* cluster.h */,
+				DBC648982055076700A9B018 /* hclustering.cpp */,
+				DBC648962055076700A9B018 /* hclustering.hpp */,
+				DBC648922055076700A9B018 /* pclustering.cpp */,
+				DBC6489A2055076700A9B018 /* pclustering.hpp */,
+				DBC648932055076700A9B018 /* subspacecluster.cpp */,
+				DBC648952055076700A9B018 /* subspacecluster.hpp */,
+			);
+			path = clusters;
+			sourceTree = "<group>";
+		};
+		DBC648292055056900A9B018 /* patterns */ = {
+			isa = PBXGroup;
+			children = (
+				DBC6487A2055074E00A9B018 /* dendrogramvisitor.cpp */,
+				DBC6487B2055074E00A9B018 /* dendrogramvisitor.hpp */,
+				DBC648802055074F00A9B018 /* internalnode.cpp */,
+				DBC648832055074F00A9B018 /* internalnode.hpp */,
+				DBC648842055074F00A9B018 /* joinvaluevisitor.cpp */,
+				DBC6487C2055074F00A9B018 /* joinvaluevisitor.hpp */,
+				DBC6487F2055074F00A9B018 /* leafnode.cpp */,
+				DBC648812055074F00A9B018 /* leafnode.hpp */,
+				DBC648822055074F00A9B018 /* node.hpp */,
+				DBC6487D2055074F00A9B018 /* nodevisitor.hpp */,
+				DBC6487E2055074F00A9B018 /* pcvisitor.cpp */,
+				DBC648852055074F00A9B018 /* pcvisitor.hpp */,
+			);
+			path = patterns;
+			sourceTree = "<group>";
+		};
+		DBC6482A2055056F00A9B018 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DBC648722055073800A9B018 /* container.h */,
+				DBC648732055073800A9B018 /* dendrogram.cpp */,
+				DBC648742055073800A9B018 /* dendrogram.hpp */,
+				DBC648702055073800A9B018 /* nnmap.h */,
+				DBC648712055073800A9B018 /* null.h */,
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
+		DBC6482B2055057A00A9B018 /* datasets */ = {
+			isa = PBXGroup;
+			children = (
+				DBC6484E2055070A00A9B018 /* attrinfo.cpp */,
+				DBC648572055070A00A9B018 /* attrinfo.hpp */,
+				DBC648502055070A00A9B018 /* attrvalue.h */,
+				DBC648552055070A00A9B018 /* cattrinfo.cpp */,
+				DBC648562055070A00A9B018 /* cattrinfo.hpp */,
+				DBC648522055070A00A9B018 /* dataset.cpp */,
+				DBC6484C2055070A00A9B018 /* dataset.hpp */,
+				DBC648532055070A00A9B018 /* dattrinfo.cpp */,
+				DBC6484D2055070A00A9B018 /* dattrinfo.hpp */,
+				DBC648512055070A00A9B018 /* record.cpp */,
+				DBC6484F2055070A00A9B018 /* record.hpp */,
+				DBC648542055070A00A9B018 /* schema.cpp */,
+				DBC648582055070A00A9B018 /* schema.hpp */,
+			);
+			path = datasets;
+			sourceTree = "<group>";
+		};
+		DBC6482C2055058E00A9B018 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				DBC648A42055078800A9B018 /* dataset_example_main.cpp */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		DBC6482D2055059D00A9B018 /* distances */ = {
+			isa = PBXGroup;
+			children = (
+				DB0A5CC320550C6100DFF864 /* minkowskidistance.cpp */,
+				DB0A5CC220550C6100DFF864 /* minkowskidistance.hpp */,
+				DB0A5CAF20550AAF00DFF864 /* distance.hpp */,
+				DB0A5CB120550AAF00DFF864 /* euclideandistance.cpp */,
+				DB0A5CB020550AAF00DFF864 /* euclideandistance.hpp */,
+			);
+			path = distances;
+			sourceTree = "<group>";
+		};
+		DBC6484A205506F200A9B018 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		DBC6481D2055054500A9B018 /* Headers */ = {
+		DB0A5C71205508FD00DFF864 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0A5C782055091B00DFF864 /* container.h in Headers */,
+				DB0A5C792055091B00DFF864 /* dendrogram.hpp in Headers */,
+				DB0A5C7A2055091B00DFF864 /* nnmap.h in Headers */,
+				DB0A5C7B2055091B00DFF864 /* null.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5C7F2055094400DFF864 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C872055096100DFF864 /* centercluster.hpp in Headers */,
+				DB0A5C882055096100DFF864 /* cluster.h in Headers */,
+				DB0A5C892055096100DFF864 /* hclustering.hpp in Headers */,
+				DB0A5C8A2055096100DFF864 /* pclustering.hpp in Headers */,
+				DB0A5C8B2055096100DFF864 /* subspacecluster.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5C92205509A000DFF864 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C98205509D100DFF864 /* dendrogramvisitor.hpp in Headers */,
+				DB0A5C99205509D100DFF864 /* internalnode.hpp in Headers */,
+				DB0A5C9A205509D100DFF864 /* joinvaluevisitor.hpp in Headers */,
+				DB0A5C9B205509D100DFF864 /* leafnode.hpp in Headers */,
+				DB0A5C9C205509D100DFF864 /* node.hpp in Headers */,
+				DB0A5C9D205509D100DFF864 /* nodevisitor.hpp in Headers */,
+				DB0A5C9E205509D100DFF864 /* pcvisitor.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5CA720550A6100DFF864 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5CC420550C6100DFF864 /* minkowskidistance.hpp in Headers */,
+				DB0A5CB820550AC100DFF864 /* distance.hpp in Headers */,
+				DB0A5CB920550AC100DFF864 /* euclideandistance.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC64830205505C000A9B018 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC6489F2055076700A9B018 /* hclustering.hpp in Headers */,
+				DBC6483F2055062C00A9B018 /* cldefines.h in Headers */,
+				DBC6489D2055076700A9B018 /* cluster.h in Headers */,
+				DBC6485A2055070A00A9B018 /* dattrinfo.hpp in Headers */,
+				DB0A5CB520550AAF00DFF864 /* euclideandistance.hpp in Headers */,
+				DBC648872055074F00A9B018 /* dendrogramvisitor.hpp in Headers */,
+				DBC648402055062C00A9B018 /* errors.hpp in Headers */,
+				DBC648792055073800A9B018 /* dendrogram.hpp in Headers */,
+				DBC648912055074F00A9B018 /* pcvisitor.hpp in Headers */,
+				DBC648772055073800A9B018 /* container.h in Headers */,
+				DBC648412055062C00A9B018 /* types.h in Headers */,
+				DBC648642055070A00A9B018 /* attrinfo.hpp in Headers */,
+				DBC6488D2055074F00A9B018 /* leafnode.hpp in Headers */,
+				DBC648592055070A00A9B018 /* dataset.hpp in Headers */,
+				DBC6488F2055074F00A9B018 /* internalnode.hpp in Headers */,
+				DBC648892055074F00A9B018 /* nodevisitor.hpp in Headers */,
+				DBC648632055070A00A9B018 /* cattrinfo.hpp in Headers */,
+				DBC6489E2055076700A9B018 /* subspacecluster.hpp in Headers */,
+				DB0A5CB420550AAF00DFF864 /* distance.hpp in Headers */,
+				DBC6488E2055074F00A9B018 /* node.hpp in Headers */,
+				DBC648762055073800A9B018 /* null.h in Headers */,
+				DBC648882055074F00A9B018 /* joinvaluevisitor.hpp in Headers */,
+				DBC648652055070A00A9B018 /* schema.hpp in Headers */,
+				DBC648A32055076700A9B018 /* pclustering.hpp in Headers */,
+				DBC648752055073800A9B018 /* nnmap.h in Headers */,
+				DBC6485D2055070A00A9B018 /* attrvalue.h in Headers */,
+				DBC648A22055076700A9B018 /* centercluster.hpp in Headers */,
+				DBC6485C2055070A00A9B018 /* record.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC64844205506CD00A9B018 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C622055086500DFF864 /* attrinfo.hpp in Headers */,
+				DB0A5C632055086500DFF864 /* attrvalue.h in Headers */,
+				DB0A5C642055086500DFF864 /* cattrinfo.hpp in Headers */,
+				DB0A5C652055086500DFF864 /* dataset.hpp in Headers */,
+				DB0A5C662055086500DFF864 /* dattrinfo.hpp in Headers */,
+				DB0A5C672055086500DFF864 /* record.hpp in Headers */,
+				DB0A5C682055086500DFF864 /* schema.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DBC6481E2055054500A9B018 /* ClusLib */ = {
+		DB0A5C72205508FD00DFF864 /* cluslib_utilities */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBC648232055054500A9B018 /* Build configuration list for PBXNativeTarget "ClusLib" */;
+			buildConfigurationList = DB0A5C74205508FD00DFF864 /* Build configuration list for PBXNativeTarget "cluslib_utilities" */;
 			buildPhases = (
-				DBC6481B2055054500A9B018 /* Sources */,
-				DBC6481C2055054500A9B018 /* Frameworks */,
-				DBC6481D2055054500A9B018 /* Headers */,
+				DB0A5C6F205508FD00DFF864 /* Sources */,
+				DB0A5C70205508FD00DFF864 /* Frameworks */,
+				DB0A5C71205508FD00DFF864 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ClusLib;
-			productName = ClusLib;
-			productReference = DBC6481F2055054500A9B018 /* libClusLib.dylib */;
+			name = cluslib_utilities;
+			productName = cluslib_utilities;
+			productReference = DB0A5C73205508FD00DFF864 /* libcluslib_utilities.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
+		};
+		DB0A5C802055094400DFF864 /* cluslib_clusters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0A5C822055094400DFF864 /* Build configuration list for PBXNativeTarget "cluslib_clusters" */;
+			buildPhases = (
+				DB0A5C7D2055094400DFF864 /* Sources */,
+				DB0A5C7E2055094400DFF864 /* Frameworks */,
+				DB0A5C7F2055094400DFF864 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cluslib_clusters;
+			productName = cluslib_clusters;
+			productReference = DB0A5C812055094400DFF864 /* libcluslib_clusters.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DB0A5C93205509A000DFF864 /* cluslib_patterns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0A5C95205509A000DFF864 /* Build configuration list for PBXNativeTarget "cluslib_patterns" */;
+			buildPhases = (
+				DB0A5C90205509A000DFF864 /* Sources */,
+				DB0A5C91205509A000DFF864 /* Frameworks */,
+				DB0A5C92205509A000DFF864 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cluslib_patterns;
+			productName = cluslib_patterns;
+			productReference = DB0A5C94205509A000DFF864 /* libcluslib_patterns.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DB0A5CA820550A6100DFF864 /* cluslib_distances */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB0A5CAA20550A6100DFF864 /* Build configuration list for PBXNativeTarget "cluslib_distances" */;
+			buildPhases = (
+				DB0A5CA520550A6100DFF864 /* Sources */,
+				DB0A5CA620550A6100DFF864 /* Frameworks */,
+				DB0A5CA720550A6100DFF864 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cluslib_distances;
+			productName = cluslib_distances;
+			productReference = DB0A5CA920550A6100DFF864 /* libcluslib_distances.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DBC64831205505C000A9B018 /* cluslib_global */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC64833205505C000A9B018 /* Build configuration list for PBXNativeTarget "cluslib_global" */;
+			buildPhases = (
+				DBC6482E205505C000A9B018 /* Sources */,
+				DBC6482F205505C000A9B018 /* Frameworks */,
+				DBC64830205505C000A9B018 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cluslib_global;
+			productName = cluslib_global;
+			productReference = DBC64832205505C000A9B018 /* libcluslib_global.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DBC64845205506CD00A9B018 /* cluslib_datasets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC64847205506CD00A9B018 /* Build configuration list for PBXNativeTarget "cluslib_datasets" */;
+			buildPhases = (
+				DBC64842205506CD00A9B018 /* Sources */,
+				DBC64843205506CD00A9B018 /* Frameworks */,
+				DBC64844205506CD00A9B018 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cluslib_datasets;
+			productName = cluslib_datasets;
+			productReference = DBC64846205506CD00A9B018 /* libcluslib_datasets.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		DBC648A9205507A300A9B018 /* dataset_example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC648AE205507A300A9B018 /* Build configuration list for PBXNativeTarget "dataset_example" */;
+			buildPhases = (
+				DBC648A6205507A300A9B018 /* Sources */,
+				DBC648A7205507A300A9B018 /* Frameworks */,
+				DBC648A8205507A300A9B018 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dataset_example;
+			productName = dataset_example;
+			productReference = DBC648AA205507A300A9B018 /* dataset_example */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -75,7 +604,31 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = Otago;
 				TargetAttributes = {
-					DBC6481E2055054500A9B018 = {
+					DB0A5C72205508FD00DFF864 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB0A5C802055094400DFF864 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB0A5C93205509A000DFF864 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DB0A5CA820550A6100DFF864 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DBC64831205505C000A9B018 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DBC64845205506CD00A9B018 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DBC648A9205507A300A9B018 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -93,22 +646,205 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBC6481E2055054500A9B018 /* ClusLib */,
+				DBC64831205505C000A9B018 /* cluslib_global */,
+				DBC64845205506CD00A9B018 /* cluslib_datasets */,
+				DBC648A9205507A300A9B018 /* dataset_example */,
+				DB0A5C72205508FD00DFF864 /* cluslib_utilities */,
+				DB0A5C802055094400DFF864 /* cluslib_clusters */,
+				DB0A5C93205509A000DFF864 /* cluslib_patterns */,
+				DB0A5CA820550A6100DFF864 /* cluslib_distances */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DBC6481B2055054500A9B018 /* Sources */ = {
+		DB0A5C6F205508FD00DFF864 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB0A5C7C2055092400DFF864 /* dendrogram.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5C7D2055094400DFF864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C8C2055096C00DFF864 /* centercluster.cpp in Sources */,
+				DB0A5C8D2055096C00DFF864 /* hclustering.cpp in Sources */,
+				DB0A5C8E2055096C00DFF864 /* pclustering.cpp in Sources */,
+				DB0A5C8F2055096C00DFF864 /* subspacecluster.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5C90205509A000DFF864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C9F205509DC00DFF864 /* centercluster.cpp in Sources */,
+				DB0A5CA0205509DC00DFF864 /* hclustering.cpp in Sources */,
+				DB0A5CA1205509DC00DFF864 /* pclustering.cpp in Sources */,
+				DB0A5CA2205509DC00DFF864 /* subspacecluster.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB0A5CA520550A6100DFF864 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5CBB20550ACD00DFF864 /* euclideandistance.cpp in Sources */,
+				DB0A5CC520550C6100DFF864 /* minkowskidistance.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC6482E205505C000A9B018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC6489B2055076700A9B018 /* pclustering.cpp in Sources */,
+				DBC6488B2055074F00A9B018 /* leafnode.cpp in Sources */,
+				DBC648782055073800A9B018 /* dendrogram.cpp in Sources */,
+				DBC6485B2055070A00A9B018 /* attrinfo.cpp in Sources */,
+				DBC648602055070A00A9B018 /* dattrinfo.cpp in Sources */,
+				DBC648622055070A00A9B018 /* cattrinfo.cpp in Sources */,
+				DBC648612055070A00A9B018 /* schema.cpp in Sources */,
+				DB0A5CB620550AAF00DFF864 /* euclideandistance.cpp in Sources */,
+				DBC6485E2055070A00A9B018 /* record.cpp in Sources */,
+				DBC648A12055076700A9B018 /* hclustering.cpp in Sources */,
+				DBC648902055074F00A9B018 /* joinvaluevisitor.cpp in Sources */,
+				DBC6485F2055070A00A9B018 /* dataset.cpp in Sources */,
+				DBC6488A2055074F00A9B018 /* pcvisitor.cpp in Sources */,
+				DBC648A52055078800A9B018 /* dataset_example_main.cpp in Sources */,
+				DBC648862055074F00A9B018 /* dendrogramvisitor.cpp in Sources */,
+				DBC6489C2055076700A9B018 /* subspacecluster.cpp in Sources */,
+				DBC648A02055076700A9B018 /* centercluster.cpp in Sources */,
+				DBC6488C2055074F00A9B018 /* internalnode.cpp in Sources */,
+				DBC6483E2055062500A9B018 /* errors.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC64842205506CD00A9B018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB0A5C692055087400DFF864 /* attrinfo.cpp in Sources */,
+				DB0A5C6A2055087400DFF864 /* cattrinfo.cpp in Sources */,
+				DB0A5C6B2055087400DFF864 /* dataset.cpp in Sources */,
+				DB0A5C6C2055087400DFF864 /* dattrinfo.cpp in Sources */,
+				DB0A5C6D2055087400DFF864 /* record.cpp in Sources */,
+				DB0A5C6E2055087400DFF864 /* schema.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC648A6205507A300A9B018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC648B1205507D700A9B018 /* dataset_example_main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		DB0A5C75205508FD00DFF864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB0A5C76205508FD00DFF864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB0A5C832055094400DFF864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB0A5C842055094400DFF864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB0A5C96205509A000DFF864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB0A5C97205509A000DFF864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DB0A5CAB20550A6100DFF864 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB0A5CAC20550A6100DFF864 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		DBC648212055054500A9B018 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -157,6 +893,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/zw/code/C_and_C++_Projects/ClusLib",
+					/usr/local/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -206,13 +946,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/zw/code/C_and_C++_Projects/ClusLib",
+					/usr/local/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
 		};
-		DBC648242055054500A9B018 /* Debug */ = {
+		DBC64834205505C000A9B018 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -224,7 +968,7 @@
 			};
 			name = Debug;
 		};
-		DBC648252055054500A9B018 /* Release */ = {
+		DBC64835205505C000A9B018 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -236,9 +980,89 @@
 			};
 			name = Release;
 		};
+		DBC64848205506CD00A9B018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBC64849205506CD00A9B018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DBC648AF205507A300A9B018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DBC648B0205507A300A9B018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BKMF97ZN2V;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB0A5C74205508FD00DFF864 /* Build configuration list for PBXNativeTarget "cluslib_utilities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0A5C75205508FD00DFF864 /* Debug */,
+				DB0A5C76205508FD00DFF864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0A5C822055094400DFF864 /* Build configuration list for PBXNativeTarget "cluslib_clusters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0A5C832055094400DFF864 /* Debug */,
+				DB0A5C842055094400DFF864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0A5C95205509A000DFF864 /* Build configuration list for PBXNativeTarget "cluslib_patterns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0A5C96205509A000DFF864 /* Debug */,
+				DB0A5C97205509A000DFF864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB0A5CAA20550A6100DFF864 /* Build configuration list for PBXNativeTarget "cluslib_distances" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB0A5CAB20550A6100DFF864 /* Debug */,
+				DB0A5CAC20550A6100DFF864 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DBC6481A2055054500A9B018 /* Build configuration list for PBXProject "ClusLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -248,11 +1072,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBC648232055054500A9B018 /* Build configuration list for PBXNativeTarget "ClusLib" */ = {
+		DBC64833205505C000A9B018 /* Build configuration list for PBXNativeTarget "cluslib_global" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DBC648242055054500A9B018 /* Debug */,
-				DBC648252055054500A9B018 /* Release */,
+				DBC64834205505C000A9B018 /* Debug */,
+				DBC64835205505C000A9B018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC64847205506CD00A9B018 /* Build configuration list for PBXNativeTarget "cluslib_datasets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC64848205506CD00A9B018 /* Debug */,
+				DBC64849205506CD00A9B018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC648AE205507A300A9B018 /* Build configuration list for PBXNativeTarget "dataset_example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC648AF205507A300A9B018 /* Debug */,
+				DBC648B0205507A300A9B018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

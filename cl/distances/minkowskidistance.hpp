@@ -1,7 +1,7 @@
-#ifndef CLUSLIB_MINKOWSKIDISTANCE_HPP
-#define CLUSLIB_MINKOWSKIDISTANCE_HPP
+#ifndef cluslib_minkowskidistance_hpp
+#define cluslib_minkowskidistance_hpp
 
-#include "cl/distance/distance.hpp"
+#include "cl/distances/distance.hpp"
 #include "cl/errors.hpp"
 
 namespace ClusLib {
@@ -9,7 +9,6 @@ class MinkowskiDistance : public Distance {
   public:
     MinkowskiDistance();
     MinkowskiDistance(Real p);
-
     Real operator()(const boost::shared_ptr<Record>&,
                     const boost::shared_ptr<Record>&) const;
 
@@ -22,9 +21,9 @@ inline MinkowskiDistance::MinkowskiDistance()
 
 inline MinkowskiDistance::MinkowskiDistance(Real p)
     : Distance("Minkowski distance"), _p(p) {
-    ASSERT(_p >= 1, "invalide parameter");
+    ASSERT((_p >= -1), "invalide parameter");
 }
 
 } // namespace ClusLib
 
-#endif // !CLUSLIB_MINKOWSKIDISTANCE_HPP
+#endif // minkowskidistance
