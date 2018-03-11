@@ -72,4 +72,60 @@ void DendrogramVisitor::visit(InternalNode& node) {
     }
 }
 
+void DendrogramVisitor::save(const std::string& filename) {
+    std::map<Size, std::pair<Size, Size>>::iterator it;
+    Size                                            topid = 0;
+    for (it = _lines.begin(); it != _lines.end(); ++it) {
+        if (it->first > topid) {
+            topid = it->first;
+        }
+    }
+
+    _points[topid].second = get_x(topid);
+    for (it = _lines.begin(); it != _lines.end(); ++it) {
+        drawLink(it->second.first, it->first);
+        drawLink(it->second.second, it->first);
+    }
+    _dg.save(filename);
+}
+
+Real DendrogramVisitor::get_x(Size id) {
+    Size id0 = _lines[id].first;
+    Size id1 = _lines[id].second;
+
+    Real x1, x2;
+    if (_points[id0].second == Null<Real>()) {
+        x1                  = get_x(id0);
+        _points[id0].second = x1;
+        if (_points[id1].second == Null<Real>()) {
+            x2                  = get_x(id1);
+            _points[id1].second = x2;
+        } else {
+            x2 = _points[id].second;
+        }
+    } else {
+        x1 = _points[id0].second;
+        if (_points[id1].second == Null<Real>()) {
+            x2                  = get_x(id1);
+            _points[id1].second = x2;
+        } else {
+            x2 = _points[id1].second;
+        }
+    }
+
+    return 0.5 * (x1 + x2);
+}
+
+void DendrogramVisitor::drawLink(Size id0, Size id1) {
+    Real x1 = _points[id0].first;
+    Real y1 = _points[id0].second;
+    Real x2 = _points[id1].first;
+    Real y2 = _points[id1].second;
+    if (x1 == _boxx + _leftMargin) {
+        x1 += 1.5;
+    }
+
+    _dg.drawLine(x1, y1, x2, y1);
+    _dg.drawLine(x2, y1, x2, y2);
+}
 } // namespace ClusLib

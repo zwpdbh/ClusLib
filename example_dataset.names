@@ -1,8 +1,0 @@
-This is the schema file for dataset example_dataset.csv
-///: schema
-1, RecordID
-2, Continouse
-3, Discrete
-4, Continouse
-5, Discrete
-6, Class
