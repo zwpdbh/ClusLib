@@ -10,6 +10,8 @@
 #include "cl/errors.hpp"
 #include "cl/patterns/joinvaluevisitor.hpp"
 #include "cl/patterns/pcvisitor.hpp"
+#include "cl/patterns/dendrogramvisitor.hpp"
+#include <algorithm>
 
 namespace ClusLib {
     HClustering::HClustering(const boost::shared_ptr<Node>& root) : _root(root) {}
@@ -23,8 +25,8 @@ namespace ClusLib {
         
         cn1->set_parent(node);
         cn2->set_parent(node);
-        p->add(ch1);
-        p->add(ch2);
+        p->add(cn1);
+        p->add(cn2);
         
         return node;
     }
