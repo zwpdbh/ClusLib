@@ -49,6 +49,6 @@ inline void                    Node::set_level(Size level) { _level = level; }
 inline boost::shared_ptr<Node> Node::get_parent() { return _parent; }
 inline void Node::set_parent(const boost::shared_ptr<Node>& p) { _parent = p; }
 
-} // namespace ClusLib
+} // namespace ClusLib 1 2 3 
 
 #endif // !CLUSLIB_NODE_HPP
