@@ -28,10 +28,12 @@ file(GLOB cl_utilities_headers
     nnmap.h
     dendrogram.hpp
     null.h
+    matrix.hpp
 )
 
 file(GLOB cl_utilities_sources
     dendrogram.cpp
+    matrix.cpp
 )
 
 add_library(cluslib_utilities SHARED ${cl_utilities_headers} ${cl_utilities_sources})

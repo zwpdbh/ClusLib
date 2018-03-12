@@ -58,6 +58,10 @@
 		DB0A5CBD20550AD400DFF864 /* libcluslib_global.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC64832205505C000A9B018 /* libcluslib_global.dylib */; };
 		DB0A5CC420550C6100DFF864 /* minkowskidistance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB0A5CC220550C6100DFF864 /* minkowskidistance.hpp */; };
 		DB0A5CC520550C6100DFF864 /* minkowskidistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB0A5CC320550C6100DFF864 /* minkowskidistance.cpp */; };
+		DB30ED68205602D40086432A /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB30ED66205602D40086432A /* matrix.cpp */; };
+		DB30ED69205602D40086432A /* matrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB30ED67205602D40086432A /* matrix.hpp */; };
+		DB30ED6A205602ED0086432A /* matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB30ED66205602D40086432A /* matrix.cpp */; };
+		DB30ED6B205602FA0086432A /* matrix.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB30ED67205602D40086432A /* matrix.hpp */; };
 		DBC6483E2055062500A9B018 /* errors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBC64838205505D700A9B018 /* errors.cpp */; };
 		DBC6483F2055062C00A9B018 /* cldefines.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC64836205505D600A9B018 /* cldefines.h */; };
 		DBC648402055062C00A9B018 /* errors.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DBC64837205505D600A9B018 /* errors.hpp */; };
@@ -130,6 +134,8 @@
 		DB0A5CB120550AAF00DFF864 /* euclideandistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = euclideandistance.cpp; path = ../../../../cl/distances/euclideandistance.cpp; sourceTree = "<group>"; };
 		DB0A5CC220550C6100DFF864 /* minkowskidistance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = minkowskidistance.hpp; path = ../../../../cl/distances/minkowskidistance.hpp; sourceTree = "<group>"; };
 		DB0A5CC320550C6100DFF864 /* minkowskidistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = minkowskidistance.cpp; path = ../../../../cl/distances/minkowskidistance.cpp; sourceTree = "<group>"; };
+		DB30ED66205602D40086432A /* matrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = matrix.cpp; path = ../../../../cl/utilities/matrix.cpp; sourceTree = "<group>"; };
+		DB30ED67205602D40086432A /* matrix.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = matrix.hpp; path = ../../../../cl/utilities/matrix.hpp; sourceTree = "<group>"; };
 		DBC64832205505C000A9B018 /* libcluslib_global.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcluslib_global.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBC64836205505D600A9B018 /* cldefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cldefines.h; path = ../../../cl/cldefines.h; sourceTree = "<group>"; };
 		DBC64837205505D600A9B018 /* errors.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = errors.hpp; path = ../../../cl/errors.hpp; sourceTree = "<group>"; };
@@ -318,6 +324,8 @@
 		DBC6482A2055056F00A9B018 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				DB30ED66205602D40086432A /* matrix.cpp */,
+				DB30ED67205602D40086432A /* matrix.hpp */,
 				DBC648722055073800A9B018 /* container.h */,
 				DBC648732055073800A9B018 /* dendrogram.cpp */,
 				DBC648742055073800A9B018 /* dendrogram.hpp */,
@@ -381,6 +389,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB30ED6B205602FA0086432A /* matrix.hpp in Headers */,
 				DB0A5C782055091B00DFF864 /* container.h in Headers */,
 				DB0A5C792055091B00DFF864 /* dendrogram.hpp in Headers */,
 				DB0A5C7A2055091B00DFF864 /* nnmap.h in Headers */,
@@ -444,6 +453,7 @@
 				DBC648592055070A00A9B018 /* dataset.hpp in Headers */,
 				DBC6488F2055074F00A9B018 /* internalnode.hpp in Headers */,
 				DBC648892055074F00A9B018 /* nodevisitor.hpp in Headers */,
+				DB30ED69205602D40086432A /* matrix.hpp in Headers */,
 				DBC648632055070A00A9B018 /* cattrinfo.hpp in Headers */,
 				DBC6489E2055076700A9B018 /* subspacecluster.hpp in Headers */,
 				DB0A5CB420550AAF00DFF864 /* distance.hpp in Headers */,
@@ -662,6 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB30ED6A205602ED0086432A /* matrix.cpp in Sources */,
 				DB0A5C7C2055092400DFF864 /* dendrogram.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +712,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB30ED68205602D40086432A /* matrix.cpp in Sources */,
 				DBC6489B2055076700A9B018 /* pclustering.cpp in Sources */,
 				DBC6488B2055074F00A9B018 /* leafnode.cpp in Sources */,
 				DBC648782055073800A9B018 /* dendrogram.cpp in Sources */,

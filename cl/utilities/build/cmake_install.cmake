@@ -51,6 +51,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/nnmap.h"
     "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/dendrogram.hpp"
     "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/null.h"
+    "/Users/zw/code/C_and_C++_Projects/ClusLib/cl/utilities/matrix.hpp"
     )
 endif()
 
